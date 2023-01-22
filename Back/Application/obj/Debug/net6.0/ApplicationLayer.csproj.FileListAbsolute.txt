@@ -1,0 +1,275 @@
+D:\Code\VS\dotnet_assignment\asingment\bin\Debug\net6.0\appsettings.Development.json
+D:\Code\VS\dotnet_assignment\asingment\bin\Debug\net6.0\appsettings.json
+D:\Code\VS\dotnet_assignment\asingment\bin\Debug\net6.0\ApplicationLayer.exe
+D:\Code\VS\dotnet_assignment\asingment\bin\Debug\net6.0\ApplicationLayer.deps.json
+D:\Code\VS\dotnet_assignment\asingment\bin\Debug\net6.0\ApplicationLayer.runtimeconfig.json
+D:\Code\VS\dotnet_assignment\asingment\bin\Debug\net6.0\ApplicationLayer.dll
+D:\Code\VS\dotnet_assignment\asingment\bin\Debug\net6.0\ApplicationLayer.pdb
+D:\Code\VS\dotnet_assignment\asingment\bin\Debug\net6.0\AutoMapper.dll
+D:\Code\VS\dotnet_assignment\asingment\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\Code\VS\dotnet_assignment\asingment\bin\Debug\net6.0\Humanizer.dll
+D:\Code\VS\dotnet_assignment\asingment\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\Code\VS\dotnet_assignment\asingment\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Code\VS\dotnet_assignment\asingment\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Code\VS\dotnet_assignment\asingment\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Code\VS\dotnet_assignment\asingment\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Code\VS\dotnet_assignment\asingment\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\Code\VS\dotnet_assignment\asingment\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Code\VS\dotnet_assignment\asingment\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+D:\Code\VS\dotnet_assignment\asingment\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Code\VS\dotnet_assignment\asingment\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+D:\Code\VS\dotnet_assignment\asingment\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+D:\Code\VS\dotnet_assignment\asingment\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Code\VS\dotnet_assignment\asingment\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+D:\Code\VS\dotnet_assignment\asingment\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+D:\Code\VS\dotnet_assignment\asingment\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\Code\VS\dotnet_assignment\asingment\bin\Debug\net6.0\Mono.TextTemplating.dll
+D:\Code\VS\dotnet_assignment\asingment\bin\Debug\net6.0\Npgsql.dll
+D:\Code\VS\dotnet_assignment\asingment\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+D:\Code\VS\dotnet_assignment\asingment\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Code\VS\dotnet_assignment\asingment\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Code\VS\dotnet_assignment\asingment\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Code\VS\dotnet_assignment\asingment\bin\Debug\net6.0\System.CodeDom.dll
+D:\Code\VS\dotnet_assignment\asingment\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+D:\Code\VS\dotnet_assignment\asingment\bin\Debug\net6.0\System.Text.Json.dll
+D:\Code\VS\dotnet_assignment\asingment\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+D:\Code\VS\dotnet_assignment\asingment\bin\Debug\net6.0\DataAccessLayer.dll
+D:\Code\VS\dotnet_assignment\asingment\bin\Debug\net6.0\DataAccessLayer.pdb
+D:\Code\VS\dotnet_assignment\asingment\obj\Debug\net6.0\ApplicationLayer.csproj.AssemblyReference.cache
+D:\Code\VS\dotnet_assignment\asingment\obj\Debug\net6.0\ApplicationLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Code\VS\dotnet_assignment\asingment\obj\Debug\net6.0\ApplicationLayer.AssemblyInfoInputs.cache
+D:\Code\VS\dotnet_assignment\asingment\obj\Debug\net6.0\ApplicationLayer.AssemblyInfo.cs
+D:\Code\VS\dotnet_assignment\asingment\obj\Debug\net6.0\ApplicationLayer.csproj.CoreCompileInputs.cache
+D:\Code\VS\dotnet_assignment\asingment\obj\Debug\net6.0\ApplicationLayer.MvcApplicationPartsAssemblyInfo.cs
+D:\Code\VS\dotnet_assignment\asingment\obj\Debug\net6.0\ApplicationLayer.MvcApplicationPartsAssemblyInfo.cache
+D:\Code\VS\dotnet_assignment\asingment\obj\Debug\net6.0\staticwebassets.build.json
+D:\Code\VS\dotnet_assignment\asingment\obj\Debug\net6.0\staticwebassets.development.json
+D:\Code\VS\dotnet_assignment\asingment\obj\Debug\net6.0\scopedcss\bundle\ApplicationLayer.styles.css
+D:\Code\VS\dotnet_assignment\asingment\obj\Debug\net6.0\ApplicationLayer.csproj.CopyComplete
+D:\Code\VS\dotnet_assignment\asingment\obj\Debug\net6.0\ApplicationLayer.dll
+D:\Code\VS\dotnet_assignment\asingment\obj\Debug\net6.0\refint\ApplicationLayer.dll
+D:\Code\VS\dotnet_assignment\asingment\obj\Debug\net6.0\ApplicationLayer.pdb
+D:\Code\VS\dotnet_assignment\asingment\obj\Debug\net6.0\ApplicationLayer.genruntimeconfig.cache
+D:\Code\VS\dotnet_assignment\asingment\obj\Debug\net6.0\ref\ApplicationLayer.dll
+D:\Code\VS\dotnet_assignment\Application\bin\Debug\net6.0\appsettings.Development.json
+D:\Code\VS\dotnet_assignment\Application\bin\Debug\net6.0\appsettings.json
+D:\Code\VS\dotnet_assignment\Application\bin\Debug\net6.0\ApplicationLayer.exe
+D:\Code\VS\dotnet_assignment\Application\bin\Debug\net6.0\ApplicationLayer.deps.json
+D:\Code\VS\dotnet_assignment\Application\bin\Debug\net6.0\ApplicationLayer.runtimeconfig.json
+D:\Code\VS\dotnet_assignment\Application\bin\Debug\net6.0\ApplicationLayer.dll
+D:\Code\VS\dotnet_assignment\Application\bin\Debug\net6.0\ApplicationLayer.pdb
+D:\Code\VS\dotnet_assignment\Application\bin\Debug\net6.0\AutoMapper.dll
+D:\Code\VS\dotnet_assignment\Application\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\Code\VS\dotnet_assignment\Application\bin\Debug\net6.0\Humanizer.dll
+D:\Code\VS\dotnet_assignment\Application\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\Code\VS\dotnet_assignment\Application\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Code\VS\dotnet_assignment\Application\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Code\VS\dotnet_assignment\Application\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Code\VS\dotnet_assignment\Application\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Code\VS\dotnet_assignment\Application\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\Code\VS\dotnet_assignment\Application\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Code\VS\dotnet_assignment\Application\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+D:\Code\VS\dotnet_assignment\Application\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Code\VS\dotnet_assignment\Application\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+D:\Code\VS\dotnet_assignment\Application\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+D:\Code\VS\dotnet_assignment\Application\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Code\VS\dotnet_assignment\Application\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+D:\Code\VS\dotnet_assignment\Application\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+D:\Code\VS\dotnet_assignment\Application\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\Code\VS\dotnet_assignment\Application\bin\Debug\net6.0\Mono.TextTemplating.dll
+D:\Code\VS\dotnet_assignment\Application\bin\Debug\net6.0\Npgsql.dll
+D:\Code\VS\dotnet_assignment\Application\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+D:\Code\VS\dotnet_assignment\Application\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Code\VS\dotnet_assignment\Application\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Code\VS\dotnet_assignment\Application\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Code\VS\dotnet_assignment\Application\bin\Debug\net6.0\System.CodeDom.dll
+D:\Code\VS\dotnet_assignment\Application\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+D:\Code\VS\dotnet_assignment\Application\bin\Debug\net6.0\System.Text.Json.dll
+D:\Code\VS\dotnet_assignment\Application\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+D:\Code\VS\dotnet_assignment\Application\bin\Debug\net6.0\DataAccessLayer.dll
+D:\Code\VS\dotnet_assignment\Application\bin\Debug\net6.0\DataAccessLayer.pdb
+D:\Code\VS\dotnet_assignment\Application\obj\Debug\net6.0\ApplicationLayer.csproj.AssemblyReference.cache
+D:\Code\VS\dotnet_assignment\Application\obj\Debug\net6.0\ApplicationLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Code\VS\dotnet_assignment\Application\obj\Debug\net6.0\ApplicationLayer.AssemblyInfoInputs.cache
+D:\Code\VS\dotnet_assignment\Application\obj\Debug\net6.0\ApplicationLayer.AssemblyInfo.cs
+D:\Code\VS\dotnet_assignment\Application\obj\Debug\net6.0\ApplicationLayer.csproj.CoreCompileInputs.cache
+D:\Code\VS\dotnet_assignment\Application\obj\Debug\net6.0\ApplicationLayer.MvcApplicationPartsAssemblyInfo.cs
+D:\Code\VS\dotnet_assignment\Application\obj\Debug\net6.0\ApplicationLayer.MvcApplicationPartsAssemblyInfo.cache
+D:\Code\VS\dotnet_assignment\Application\obj\Debug\net6.0\staticwebassets.build.json
+D:\Code\VS\dotnet_assignment\Application\obj\Debug\net6.0\staticwebassets.development.json
+D:\Code\VS\dotnet_assignment\Application\obj\Debug\net6.0\scopedcss\bundle\ApplicationLayer.styles.css
+D:\Code\VS\dotnet_assignment\Application\obj\Debug\net6.0\ApplicationLayer.csproj.CopyComplete
+D:\Code\VS\dotnet_assignment\Application\obj\Debug\net6.0\ApplicationLayer.dll
+D:\Code\VS\dotnet_assignment\Application\obj\Debug\net6.0\refint\ApplicationLayer.dll
+D:\Code\VS\dotnet_assignment\Application\obj\Debug\net6.0\ApplicationLayer.pdb
+D:\Code\VS\dotnet_assignment\Application\obj\Debug\net6.0\ApplicationLayer.genruntimeconfig.cache
+D:\Code\VS\dotnet_assignment\Application\obj\Debug\net6.0\ref\ApplicationLayer.dll
+C:\Users\User\OneDrive\Desktop\New folder\Simplest-Web-API-with-dot-NET\Application\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\User\OneDrive\Desktop\New folder\Simplest-Web-API-with-dot-NET\Application\bin\Debug\net6.0\appsettings.json
+C:\Users\User\OneDrive\Desktop\New folder\Simplest-Web-API-with-dot-NET\Application\bin\Debug\net6.0\ApplicationLayer.exe
+C:\Users\User\OneDrive\Desktop\New folder\Simplest-Web-API-with-dot-NET\Application\bin\Debug\net6.0\ApplicationLayer.deps.json
+C:\Users\User\OneDrive\Desktop\New folder\Simplest-Web-API-with-dot-NET\Application\bin\Debug\net6.0\ApplicationLayer.runtimeconfig.json
+C:\Users\User\OneDrive\Desktop\New folder\Simplest-Web-API-with-dot-NET\Application\bin\Debug\net6.0\ApplicationLayer.dll
+C:\Users\User\OneDrive\Desktop\New folder\Simplest-Web-API-with-dot-NET\Application\bin\Debug\net6.0\ApplicationLayer.pdb
+C:\Users\User\OneDrive\Desktop\New folder\Simplest-Web-API-with-dot-NET\Application\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\User\OneDrive\Desktop\New folder\Simplest-Web-API-with-dot-NET\Application\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\User\OneDrive\Desktop\New folder\Simplest-Web-API-with-dot-NET\Application\bin\Debug\net6.0\Humanizer.dll
+C:\Users\User\OneDrive\Desktop\New folder\Simplest-Web-API-with-dot-NET\Application\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\User\OneDrive\Desktop\New folder\Simplest-Web-API-with-dot-NET\Application\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\User\OneDrive\Desktop\New folder\Simplest-Web-API-with-dot-NET\Application\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\User\OneDrive\Desktop\New folder\Simplest-Web-API-with-dot-NET\Application\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\User\OneDrive\Desktop\New folder\Simplest-Web-API-with-dot-NET\Application\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\User\OneDrive\Desktop\New folder\Simplest-Web-API-with-dot-NET\Application\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\User\OneDrive\Desktop\New folder\Simplest-Web-API-with-dot-NET\Application\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\User\OneDrive\Desktop\New folder\Simplest-Web-API-with-dot-NET\Application\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\User\OneDrive\Desktop\New folder\Simplest-Web-API-with-dot-NET\Application\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\User\OneDrive\Desktop\New folder\Simplest-Web-API-with-dot-NET\Application\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\User\OneDrive\Desktop\New folder\Simplest-Web-API-with-dot-NET\Application\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+C:\Users\User\OneDrive\Desktop\New folder\Simplest-Web-API-with-dot-NET\Application\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\User\OneDrive\Desktop\New folder\Simplest-Web-API-with-dot-NET\Application\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\Users\User\OneDrive\Desktop\New folder\Simplest-Web-API-with-dot-NET\Application\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Users\User\OneDrive\Desktop\New folder\Simplest-Web-API-with-dot-NET\Application\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\User\OneDrive\Desktop\New folder\Simplest-Web-API-with-dot-NET\Application\bin\Debug\net6.0\Mono.TextTemplating.dll
+C:\Users\User\OneDrive\Desktop\New folder\Simplest-Web-API-with-dot-NET\Application\bin\Debug\net6.0\Npgsql.dll
+C:\Users\User\OneDrive\Desktop\New folder\Simplest-Web-API-with-dot-NET\Application\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\User\OneDrive\Desktop\New folder\Simplest-Web-API-with-dot-NET\Application\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\User\OneDrive\Desktop\New folder\Simplest-Web-API-with-dot-NET\Application\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\User\OneDrive\Desktop\New folder\Simplest-Web-API-with-dot-NET\Application\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\User\OneDrive\Desktop\New folder\Simplest-Web-API-with-dot-NET\Application\bin\Debug\net6.0\System.CodeDom.dll
+C:\Users\User\OneDrive\Desktop\New folder\Simplest-Web-API-with-dot-NET\Application\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\Users\User\OneDrive\Desktop\New folder\Simplest-Web-API-with-dot-NET\Application\bin\Debug\net6.0\System.Text.Json.dll
+C:\Users\User\OneDrive\Desktop\New folder\Simplest-Web-API-with-dot-NET\Application\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\User\OneDrive\Desktop\New folder\Simplest-Web-API-with-dot-NET\Application\bin\Debug\net6.0\DataAccessLayer.dll
+C:\Users\User\OneDrive\Desktop\New folder\Simplest-Web-API-with-dot-NET\Application\bin\Debug\net6.0\DataAccessLayer.pdb
+C:\Users\User\OneDrive\Desktop\New folder\Simplest-Web-API-with-dot-NET\Application\obj\Debug\net6.0\ApplicationLayer.csproj.AssemblyReference.cache
+C:\Users\User\OneDrive\Desktop\New folder\Simplest-Web-API-with-dot-NET\Application\obj\Debug\net6.0\ApplicationLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\OneDrive\Desktop\New folder\Simplest-Web-API-with-dot-NET\Application\obj\Debug\net6.0\ApplicationLayer.AssemblyInfoInputs.cache
+C:\Users\User\OneDrive\Desktop\New folder\Simplest-Web-API-with-dot-NET\Application\obj\Debug\net6.0\ApplicationLayer.AssemblyInfo.cs
+C:\Users\User\OneDrive\Desktop\New folder\Simplest-Web-API-with-dot-NET\Application\obj\Debug\net6.0\ApplicationLayer.csproj.CoreCompileInputs.cache
+C:\Users\User\OneDrive\Desktop\New folder\Simplest-Web-API-with-dot-NET\Application\obj\Debug\net6.0\ApplicationLayer.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\User\OneDrive\Desktop\New folder\Simplest-Web-API-with-dot-NET\Application\obj\Debug\net6.0\ApplicationLayer.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\User\OneDrive\Desktop\New folder\Simplest-Web-API-with-dot-NET\Application\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\User\OneDrive\Desktop\New folder\Simplest-Web-API-with-dot-NET\Application\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\User\OneDrive\Desktop\New folder\Simplest-Web-API-with-dot-NET\Application\obj\Debug\net6.0\scopedcss\bundle\ApplicationLayer.styles.css
+C:\Users\User\OneDrive\Desktop\New folder\Simplest-Web-API-with-dot-NET\Application\obj\Debug\net6.0\ApplicationLayer.csproj.CopyComplete
+C:\Users\User\OneDrive\Desktop\New folder\Simplest-Web-API-with-dot-NET\Application\obj\Debug\net6.0\ApplicationLayer.dll
+C:\Users\User\OneDrive\Desktop\New folder\Simplest-Web-API-with-dot-NET\Application\obj\Debug\net6.0\refint\ApplicationLayer.dll
+C:\Users\User\OneDrive\Desktop\New folder\Simplest-Web-API-with-dot-NET\Application\obj\Debug\net6.0\ApplicationLayer.pdb
+C:\Users\User\OneDrive\Desktop\New folder\Simplest-Web-API-with-dot-NET\Application\obj\Debug\net6.0\ApplicationLayer.genruntimeconfig.cache
+C:\Users\User\OneDrive\Desktop\New folder\Simplest-Web-API-with-dot-NET\Application\obj\Debug\net6.0\ref\ApplicationLayer.dll
+D:\Code\Solo\Fitness tracker\Back\Application\obj\Debug\net6.0\ApplicationLayer.csproj.AssemblyReference.cache
+D:\Code\Solo\Fitness tracker\Back\Application\obj\Debug\net6.0\ApplicationLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Code\Solo\Fitness tracker\Back\Application\obj\Debug\net6.0\ApplicationLayer.AssemblyInfoInputs.cache
+D:\Code\Solo\Fitness tracker\Back\Application\obj\Debug\net6.0\ApplicationLayer.AssemblyInfo.cs
+D:\Code\Solo\Fitness tracker\Back\Application\obj\Debug\net6.0\ApplicationLayer.csproj.CoreCompileInputs.cache
+D:\Code\Solo\Fitness tracker\Back\Application\obj\Debug\net6.0\ApplicationLayer.MvcApplicationPartsAssemblyInfo.cs
+D:\Code\Solo\Fitness tracker\Back\Application\obj\Debug\net6.0\ApplicationLayer.MvcApplicationPartsAssemblyInfo.cache
+D:\Code\Solo\Fitness tracker\Back\Application\obj\Debug\net6.0\ApplicationLayer.dll
+D:\Code\Solo\Fitness tracker\Back\Application\obj\Debug\net6.0\refint\ApplicationLayer.dll
+D:\Code\Solo\Fitness tracker\Back\Application\obj\Debug\net6.0\ApplicationLayer.pdb
+D:\Code\Solo\Fitness tracker\Back\Application\bin\Debug\net6.0\appsettings.Development.json
+D:\Code\Solo\Fitness tracker\Back\Application\bin\Debug\net6.0\appsettings.json
+D:\Code\Solo\Fitness tracker\Back\Application\bin\Debug\net6.0\ApplicationLayer.exe
+D:\Code\Solo\Fitness tracker\Back\Application\bin\Debug\net6.0\ApplicationLayer.deps.json
+D:\Code\Solo\Fitness tracker\Back\Application\bin\Debug\net6.0\ApplicationLayer.runtimeconfig.json
+D:\Code\Solo\Fitness tracker\Back\Application\bin\Debug\net6.0\ApplicationLayer.dll
+D:\Code\Solo\Fitness tracker\Back\Application\bin\Debug\net6.0\ApplicationLayer.pdb
+D:\Code\Solo\Fitness tracker\Back\Application\bin\Debug\net6.0\AutoMapper.dll
+D:\Code\Solo\Fitness tracker\Back\Application\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\Code\Solo\Fitness tracker\Back\Application\bin\Debug\net6.0\Humanizer.dll
+D:\Code\Solo\Fitness tracker\Back\Application\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\Code\Solo\Fitness tracker\Back\Application\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Code\Solo\Fitness tracker\Back\Application\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Code\Solo\Fitness tracker\Back\Application\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Code\Solo\Fitness tracker\Back\Application\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Code\Solo\Fitness tracker\Back\Application\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\Code\Solo\Fitness tracker\Back\Application\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Code\Solo\Fitness tracker\Back\Application\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+D:\Code\Solo\Fitness tracker\Back\Application\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Code\Solo\Fitness tracker\Back\Application\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+D:\Code\Solo\Fitness tracker\Back\Application\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+D:\Code\Solo\Fitness tracker\Back\Application\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Code\Solo\Fitness tracker\Back\Application\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+D:\Code\Solo\Fitness tracker\Back\Application\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+D:\Code\Solo\Fitness tracker\Back\Application\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\Code\Solo\Fitness tracker\Back\Application\bin\Debug\net6.0\Mono.TextTemplating.dll
+D:\Code\Solo\Fitness tracker\Back\Application\bin\Debug\net6.0\Npgsql.dll
+D:\Code\Solo\Fitness tracker\Back\Application\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+D:\Code\Solo\Fitness tracker\Back\Application\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Code\Solo\Fitness tracker\Back\Application\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Code\Solo\Fitness tracker\Back\Application\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Code\Solo\Fitness tracker\Back\Application\bin\Debug\net6.0\System.CodeDom.dll
+D:\Code\Solo\Fitness tracker\Back\Application\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+D:\Code\Solo\Fitness tracker\Back\Application\bin\Debug\net6.0\System.Text.Json.dll
+D:\Code\Solo\Fitness tracker\Back\Application\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+D:\Code\Solo\Fitness tracker\Back\Application\bin\Debug\net6.0\DataAccessLayer.dll
+D:\Code\Solo\Fitness tracker\Back\Application\bin\Debug\net6.0\DataAccessLayer.pdb
+D:\Code\Solo\Fitness tracker\Back\Application\obj\Debug\net6.0\staticwebassets\msbuild.ApplicationLayer.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Code\Solo\Fitness tracker\Back\Application\obj\Debug\net6.0\staticwebassets\msbuild.build.ApplicationLayer.props
+D:\Code\Solo\Fitness tracker\Back\Application\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.ApplicationLayer.props
+D:\Code\Solo\Fitness tracker\Back\Application\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.ApplicationLayer.props
+D:\Code\Solo\Fitness tracker\Back\Application\obj\Debug\net6.0\staticwebassets.pack.json
+D:\Code\Solo\Fitness tracker\Back\Application\obj\Debug\net6.0\staticwebassets.build.json
+D:\Code\Solo\Fitness tracker\Back\Application\obj\Debug\net6.0\staticwebassets.development.json
+D:\Code\Solo\Fitness tracker\Back\Application\obj\Debug\net6.0\scopedcss\bundle\ApplicationLayer.styles.css
+D:\Code\Solo\Fitness tracker\Back\Application\obj\Debug\net6.0\ApplicationLayer.csproj.CopyComplete
+D:\Code\Solo\Fitness tracker\Back\Application\obj\Debug\net6.0\ApplicationLayer.genruntimeconfig.cache
+D:\Code\Solo\Fitness tracker\Back\Application\obj\Debug\net6.0\ref\ApplicationLayer.dll
+D:\Code\Solo\Fitness_Tracker\Back\Application\bin\Debug\net6.0\appsettings.Development.json
+D:\Code\Solo\Fitness_Tracker\Back\Application\bin\Debug\net6.0\appsettings.json
+D:\Code\Solo\Fitness_Tracker\Back\Application\bin\Debug\net6.0\ApplicationLayer.exe
+D:\Code\Solo\Fitness_Tracker\Back\Application\bin\Debug\net6.0\ApplicationLayer.deps.json
+D:\Code\Solo\Fitness_Tracker\Back\Application\bin\Debug\net6.0\ApplicationLayer.runtimeconfig.json
+D:\Code\Solo\Fitness_Tracker\Back\Application\bin\Debug\net6.0\ApplicationLayer.dll
+D:\Code\Solo\Fitness_Tracker\Back\Application\bin\Debug\net6.0\ApplicationLayer.pdb
+D:\Code\Solo\Fitness_Tracker\Back\Application\bin\Debug\net6.0\AutoMapper.dll
+D:\Code\Solo\Fitness_Tracker\Back\Application\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\Code\Solo\Fitness_Tracker\Back\Application\bin\Debug\net6.0\Humanizer.dll
+D:\Code\Solo\Fitness_Tracker\Back\Application\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\Code\Solo\Fitness_Tracker\Back\Application\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Code\Solo\Fitness_Tracker\Back\Application\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Code\Solo\Fitness_Tracker\Back\Application\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Code\Solo\Fitness_Tracker\Back\Application\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Code\Solo\Fitness_Tracker\Back\Application\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\Code\Solo\Fitness_Tracker\Back\Application\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Code\Solo\Fitness_Tracker\Back\Application\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+D:\Code\Solo\Fitness_Tracker\Back\Application\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Code\Solo\Fitness_Tracker\Back\Application\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+D:\Code\Solo\Fitness_Tracker\Back\Application\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+D:\Code\Solo\Fitness_Tracker\Back\Application\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Code\Solo\Fitness_Tracker\Back\Application\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+D:\Code\Solo\Fitness_Tracker\Back\Application\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+D:\Code\Solo\Fitness_Tracker\Back\Application\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\Code\Solo\Fitness_Tracker\Back\Application\bin\Debug\net6.0\Mono.TextTemplating.dll
+D:\Code\Solo\Fitness_Tracker\Back\Application\bin\Debug\net6.0\Npgsql.dll
+D:\Code\Solo\Fitness_Tracker\Back\Application\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+D:\Code\Solo\Fitness_Tracker\Back\Application\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Code\Solo\Fitness_Tracker\Back\Application\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Code\Solo\Fitness_Tracker\Back\Application\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Code\Solo\Fitness_Tracker\Back\Application\bin\Debug\net6.0\System.CodeDom.dll
+D:\Code\Solo\Fitness_Tracker\Back\Application\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+D:\Code\Solo\Fitness_Tracker\Back\Application\bin\Debug\net6.0\System.Text.Json.dll
+D:\Code\Solo\Fitness_Tracker\Back\Application\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+D:\Code\Solo\Fitness_Tracker\Back\Application\bin\Debug\net6.0\DataAccessLayer.dll
+D:\Code\Solo\Fitness_Tracker\Back\Application\bin\Debug\net6.0\DataAccessLayer.pdb
+D:\Code\Solo\Fitness_Tracker\Back\Application\obj\Debug\net6.0\ApplicationLayer.csproj.AssemblyReference.cache
+D:\Code\Solo\Fitness_Tracker\Back\Application\obj\Debug\net6.0\ApplicationLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Code\Solo\Fitness_Tracker\Back\Application\obj\Debug\net6.0\ApplicationLayer.AssemblyInfoInputs.cache
+D:\Code\Solo\Fitness_Tracker\Back\Application\obj\Debug\net6.0\ApplicationLayer.AssemblyInfo.cs
+D:\Code\Solo\Fitness_Tracker\Back\Application\obj\Debug\net6.0\ApplicationLayer.csproj.CoreCompileInputs.cache
+D:\Code\Solo\Fitness_Tracker\Back\Application\obj\Debug\net6.0\ApplicationLayer.MvcApplicationPartsAssemblyInfo.cs
+D:\Code\Solo\Fitness_Tracker\Back\Application\obj\Debug\net6.0\ApplicationLayer.MvcApplicationPartsAssemblyInfo.cache
+D:\Code\Solo\Fitness_Tracker\Back\Application\obj\Debug\net6.0\staticwebassets\msbuild.ApplicationLayer.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Code\Solo\Fitness_Tracker\Back\Application\obj\Debug\net6.0\staticwebassets\msbuild.build.ApplicationLayer.props
+D:\Code\Solo\Fitness_Tracker\Back\Application\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.ApplicationLayer.props
+D:\Code\Solo\Fitness_Tracker\Back\Application\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.ApplicationLayer.props
+D:\Code\Solo\Fitness_Tracker\Back\Application\obj\Debug\net6.0\staticwebassets.pack.json
+D:\Code\Solo\Fitness_Tracker\Back\Application\obj\Debug\net6.0\staticwebassets.build.json
+D:\Code\Solo\Fitness_Tracker\Back\Application\obj\Debug\net6.0\staticwebassets.development.json
+D:\Code\Solo\Fitness_Tracker\Back\Application\obj\Debug\net6.0\scopedcss\bundle\ApplicationLayer.styles.css
+D:\Code\Solo\Fitness_Tracker\Back\Application\obj\Debug\net6.0\ApplicationLayer.csproj.CopyComplete
+D:\Code\Solo\Fitness_Tracker\Back\Application\obj\Debug\net6.0\ApplicationLayer.dll
+D:\Code\Solo\Fitness_Tracker\Back\Application\obj\Debug\net6.0\refint\ApplicationLayer.dll
+D:\Code\Solo\Fitness_Tracker\Back\Application\obj\Debug\net6.0\ApplicationLayer.pdb
+D:\Code\Solo\Fitness_Tracker\Back\Application\obj\Debug\net6.0\ApplicationLayer.genruntimeconfig.cache
+D:\Code\Solo\Fitness_Tracker\Back\Application\obj\Debug\net6.0\ref\ApplicationLayer.dll
