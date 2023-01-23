@@ -78,11 +78,13 @@ namespace DataAccessLayer.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
-                    b.Property<List<int>>("Activities")
-                        .IsRequired()
-                        .HasColumnType("integer[]");
+                    b.Property<int>("Activity")
+                        .HasColumnType("integer");
 
                     b.Property<int?>("DayId")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("Time")
                         .HasColumnType("integer");
 
                     b.HasKey("Id");
@@ -203,9 +205,15 @@ namespace DataAccessLayer.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
+                    b.Property<int>("Age")
+                        .HasColumnType("integer");
+
                     b.Property<string>("Email")
                         .IsRequired()
                         .HasColumnType("text");
+
+                    b.Property<double>("Height")
+                        .HasColumnType("double precision");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -214,6 +222,9 @@ namespace DataAccessLayer.Migrations
                     b.Property<string>("Password")
                         .IsRequired()
                         .HasColumnType("text");
+
+                    b.Property<double>("Weight")
+                        .HasColumnType("double precision");
 
                     b.HasKey("Id");
 

@@ -1,6 +1,4 @@
-﻿using ApplicationLayer.DTO;
-using asingment.Model;
-using DataAccessLayer.IRepository;
+﻿using DataAccessLayer.IRepository;
 using DataAccessLayer.Model;
 using Microsoft.AspNetCore.Mvc;
 
@@ -17,8 +15,21 @@ namespace ApplicationLayer.Controllers
         }
 
         [HttpPost("/add_day/")]
-        public IActionResult add_day(int userId, Day day)
+        public IActionResult add_day(int userId, string userName, string password, Day day)
         {
+            try
+            {
+                User user = dal.GetUser(userId);
+                if (user.Name.Equals(userName) && user.Password.Equals(password))
+                {
+                    ;
+                }
+                else return BadRequest("Login with corrent infromation first!");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest("Login with corrent infromation first!");
+            }
             try
             {
                 bool response = dal.AddDay(userId, day);
@@ -44,8 +55,21 @@ namespace ApplicationLayer.Controllers
 
 
         [HttpPut("/update_day/")]
-        public IActionResult update_day(int userId, Day day)
+        public IActionResult update_day(int userId, string userName, string password, Day day)
         {
+            try
+            {
+                User user = dal.GetUser(userId);
+                if (user.Name.Equals(userName) && user.Password.Equals(password))
+                {
+                    ;
+                }
+                else return BadRequest("Login with corrent infromation first!");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest("Login with corrent infromation first!");
+            }
             try
             {
                 bool response = dal.UpdateDay(userId, day);

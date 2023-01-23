@@ -55,8 +55,21 @@ namespace ApplicationLayer.Controllers
         }
 
         [HttpGet("/get_user/{userId}")]
-        public IActionResult get_user(int userId)
+        public IActionResult get_user(int userId, string userName, string password)
         {
+            try
+            {
+                User user = dal.GetUser(userId);
+                if (user != null && user.Name.Equals(userName) && user.Password.Equals(password))
+                {
+                    ;
+                }
+                else return BadRequest("Login with corrent infromation first!");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest("Login with corrent infromation first!");
+            }
             try
             {
                 User response = dal.GetUser(userId);

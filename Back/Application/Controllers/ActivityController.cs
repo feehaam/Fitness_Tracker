@@ -1,6 +1,5 @@
 ﻿using ApplicationLayer.DTO;
 using DataAccessLayer.IRepository;
-using DataAccessLayer.Model;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ApplicationLayer.Controllers
@@ -16,8 +15,12 @@ namespace ApplicationLayer.Controllers
         }
 
         [HttpPost("/create_activity/")]
-        public IActionResult create_activity(ActivityDTO activityDTO)
+        public IActionResult create_activity(ActivityDTO activityDTO, string adminKey)
         {
+            if (adminKey == null || !adminKey.Equals("fee98"))
+            {
+                return BadRequest("Only admin/moderators can add activities.");
+            }
             try
             {
                 bool response = dal.CreateActivity(activityDTO.GetActivity(), "fee98");

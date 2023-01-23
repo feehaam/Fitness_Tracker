@@ -3,6 +3,7 @@
     public class Exercise
     {
         public int Id { get; set; }
-        public List<int> Activities { get;set; } = new List<int>();
+        public int Activity { get;set; }
+        public int Time { get;set; }
     }
 }

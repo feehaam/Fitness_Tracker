@@ -15,8 +15,12 @@ namespace ApplicationLayer.Controllers
             this.dal = dal;
         }
         [HttpPost("/create_food/")]
-        public IActionResult create_food(FoodDTO foodDTO)
+        public IActionResult create_food(FoodDTO foodDTO, string adminKey)
         {
+            if(adminKey == null || !adminKey.Equals("fee98"))
+            {
+                return BadRequest("Only admin/moderators can add foods.");
+            }
             try
             {
                 bool response = dal.CreateFood(foodDTO.GetFood(), "fee98");

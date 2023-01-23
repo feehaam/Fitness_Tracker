@@ -7,7 +7,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace DataAccessLayer.Migrations
 {
     /// <inheritdoc />
-    public partial class uppp : Migration
+    public partial class userupdated : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -67,7 +67,10 @@ namespace DataAccessLayer.Migrations
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     Name = table.Column<string>(type: "text", nullable: false),
                     Email = table.Column<string>(type: "text", nullable: false),
-                    Password = table.Column<string>(type: "text", nullable: false)
+                    Password = table.Column<string>(type: "text", nullable: false),
+                    Weight = table.Column<double>(type: "double precision", nullable: false),
+                    Height = table.Column<double>(type: "double precision", nullable: false),
+                    Age = table.Column<int>(type: "integer", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -119,7 +122,8 @@ namespace DataAccessLayer.Migrations
                 {
                     Id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    Activities = table.Column<List<int>>(type: "integer[]", nullable: false),
+                    Activity = table.Column<int>(type: "integer", nullable: false),
+                    Time = table.Column<int>(type: "integer", nullable: false),
                     DayId = table.Column<int>(type: "integer", nullable: true)
                 },
                 constraints: table =>

@@ -156,7 +156,14 @@ namespace DataAccessLayer.Repository
         }
         public Day GetDay(int dayId)
         {
-            return context.Days.Where(i => i.Id == dayId).Include(i => i.Meals).Include(i => i.Exercises).First();
+            try
+            {
+                return context.Days.Where(i => i.Id == dayId).Include(i => i.Meals).Include(i => i.Exercises).Include(i => i.Water).First();
+            }
+            catch(Exception ex)
+            {
+                return null;
+            }
         }
 
         // Update
