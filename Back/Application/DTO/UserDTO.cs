@@ -10,6 +10,8 @@ namespace ApplicationLayer.DTO
         public double Weight { get; set; }
         public double Height { get; set; }
         public int Age { get; set; }
+        public bool Gender { get; set; }
+
 
         public User GetUser()
         {
@@ -21,6 +23,15 @@ namespace ApplicationLayer.DTO
             user.Age = Age;
             user.Weight = Weight;
             user.Height = Height;
+            user.Gender = Gender;
+            user.Weights = new List<double>();
+            user.WeightDates = new List<string>();
+
+            if(Weight > 30 && Weight < 150)
+            {
+                user.Weights.Add(Weight);
+                user.WeightDates.Add(DateTime.Now.ToString("dd-MM-yyyy"));
+            }
 
             return user;
         }

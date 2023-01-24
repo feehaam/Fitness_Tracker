@@ -104,5 +104,28 @@ namespace ApplicationLayer.Controllers
                 return BadRequest(-1);
             }
         }
+
+        [HttpPost("/add_weight/")]
+        public IActionResult add_weight(int userId, string userName, string password, double weight)
+        {
+            try
+            {
+                User user = dal.GetUser(userId);
+                if (user != null && user.Name.Equals(userName) && user.Password.Equals(password))
+                {
+                    if (weight < 30 || weight > 150) return BadRequest("Invalid weight");
+                    user.Weights.Add(weight);
+                    string date = DateTime.Now.ToString("dd-MM-yyyy");
+                    user.WeightDates.Add(date);
+                    dal.Save();
+                    return Ok(date);
+                }
+                else return BadRequest("Login with corrent infromation first!");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest("Failed to add weight.");
+            }
+        }
     }
 }
