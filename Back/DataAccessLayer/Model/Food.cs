@@ -1,5 +1,8 @@
-﻿namespace DataAccessLayer.Model
+﻿using Microsoft.EntityFrameworkCore;
+
+namespace DataAccessLayer.Model
 {
+    [Index(nameof(Name), IsUnique = true)]
     public class Food
     {
         public int Id { get; set; }

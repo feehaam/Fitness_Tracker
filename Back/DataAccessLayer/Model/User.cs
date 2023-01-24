@@ -1,5 +1,9 @@
-﻿namespace DataAccessLayer.Model
+﻿using Microsoft.EntityFrameworkCore;
+
+namespace DataAccessLayer.Model
 {
+    [Index(nameof(Name), IsUnique = true)]
+    [Index(nameof(Email), IsUnique = true)]
     public class User
     {
         public int Id { get; set; }
@@ -10,5 +14,8 @@
         public double Weight { get; set; }
         public double Height { get; set; }
         public int Age { get; set; }
+        public bool Gender { get; set; }
+        public List<double> Weights { get; set; } = new List<double>();
+        public List<string> WeightDates { get; set; } = new List<string>();
     }
 }

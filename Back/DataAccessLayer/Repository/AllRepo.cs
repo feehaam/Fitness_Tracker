@@ -17,14 +17,6 @@ namespace DataAccessLayer.Repository
         {
             try
             {
-                List<Food> allFoods = GetAllFoods();
-                foreach (Food F in allFoods)
-                {
-                    if (F.Name.Equals(food.Name))
-                    {
-                        return false;
-                    }
-                }
                 context.Foods.Add(food);
                 context.SaveChanges();
                 return true;
@@ -37,37 +29,13 @@ namespace DataAccessLayer.Repository
         }
         public bool CreateActivity(Activity activity, string adminKey)
         {
-            try
-            {
-                List<Activity> allActivities = GetAllActivities();
-                foreach (Activity A in allActivities)
-                {
-                    if (A.Name.Equals(activity.Name))
-                    {
-                        return false;
-                    }
-                }
-                context.Activities.Add(activity);
-                return Save();
-            }
-            catch (Exception ex)
-            {
-                ex.ToString();
-                return false;
-            }
+            context.Activities.Add(activity);
+            return Save();
         }
         public bool CreateUser (User user)
         {
             try
             {
-                List<User> users = GetAllUsers();
-                foreach (User U in users)
-                {
-                    if (U.Name.Equals(user.Name) || U.Id == user.Id || U.Email.Equals(user.Email))
-                    {
-                        return false;
-                    }
-                }
                 context.Users.Add(user);
                 return Save();
             }
@@ -182,7 +150,7 @@ namespace DataAccessLayer.Repository
             {
                 if (D.Date.Equals(day.Date))
                 {
-                    user.Days.Remove(D);
+                    context.Days.Remove(D);
                     user.Days.Add(day);
                     return Save();
                 }

@@ -7,7 +7,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace DataAccessLayer.Migrations
 {
     /// <inheritdoc />
-    public partial class userupdated : Migration
+    public partial class activityuniqued : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -70,7 +70,10 @@ namespace DataAccessLayer.Migrations
                     Password = table.Column<string>(type: "text", nullable: false),
                     Weight = table.Column<double>(type: "double precision", nullable: false),
                     Height = table.Column<double>(type: "double precision", nullable: false),
-                    Age = table.Column<int>(type: "integer", nullable: false)
+                    Age = table.Column<int>(type: "integer", nullable: false),
+                    Gender = table.Column<bool>(type: "boolean", nullable: false),
+                    Weights = table.Column<List<double>>(type: "double precision[]", nullable: false),
+                    WeightDates = table.Column<List<string>>(type: "text[]", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -157,6 +160,18 @@ namespace DataAccessLayer.Migrations
                 });
 
             migrationBuilder.CreateIndex(
+                name: "IX_Activities_Name",
+                table: "Activities",
+                column: "Name",
+                unique: true);
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Days_Date",
+                table: "Days",
+                column: "Date",
+                unique: true);
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Days_UserId",
                 table: "Days",
                 column: "UserId");
@@ -172,9 +187,27 @@ namespace DataAccessLayer.Migrations
                 column: "DayId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Foods_Name",
+                table: "Foods",
+                column: "Name",
+                unique: true);
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Meal_DayId",
                 table: "Meal",
                 column: "DayId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Users_Email",
+                table: "Users",
+                column: "Email",
+                unique: true);
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Users_Name",
+                table: "Users",
+                column: "Name",
+                unique: true);
         }
 
         /// <inheritdoc />

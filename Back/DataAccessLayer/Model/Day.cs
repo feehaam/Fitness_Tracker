@@ -1,5 +1,9 @@
-﻿namespace DataAccessLayer.Model
+﻿using Microsoft.EntityFrameworkCore;
+using System.Xml.Linq;
+
+namespace DataAccessLayer.Model
 {
+    [Index(nameof(Date), IsUnique = true)]
     public class Day
     {
         public int Id { get; set; }

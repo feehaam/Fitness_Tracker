@@ -13,8 +13,8 @@ using asingment.Model;
 namespace DataAccessLayer.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20230123065216_user-updated")]
-    partial class userupdated
+    [Migration("20230124175339_activity-uniqued")]
+    partial class activityuniqued
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -43,6 +43,9 @@ namespace DataAccessLayer.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("Name")
+                        .IsUnique();
+
                     b.ToTable("Activities");
                 });
 
@@ -65,6 +68,9 @@ namespace DataAccessLayer.Migrations
                         .HasColumnType("integer");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("Date")
+                        .IsUnique();
 
                     b.HasIndex("UserId");
 
@@ -171,6 +177,9 @@ namespace DataAccessLayer.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("Name")
+                        .IsUnique();
+
                     b.ToTable("Foods");
                 });
 
@@ -215,6 +224,9 @@ namespace DataAccessLayer.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<bool>("Gender")
+                        .HasColumnType("boolean");
+
                     b.Property<double>("Height")
                         .HasColumnType("double precision");
 
@@ -229,7 +241,21 @@ namespace DataAccessLayer.Migrations
                     b.Property<double>("Weight")
                         .HasColumnType("double precision");
 
+                    b.Property<List<string>>("WeightDates")
+                        .IsRequired()
+                        .HasColumnType("text[]");
+
+                    b.Property<List<double>>("Weights")
+                        .IsRequired()
+                        .HasColumnType("double precision[]");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("Email")
+                        .IsUnique();
+
+                    b.HasIndex("Name")
+                        .IsUnique();
 
                     b.ToTable("Users");
                 });
