@@ -43,6 +43,10 @@ namespace ApplicationLayer.Controllers
                 List<User> response = dal.GetAllUsers();
                 if (response != null)
                 {
+                    foreach(User user in response)
+                    {
+                        user.Password = "********";
+                    }
                     return Ok(response);
                 }
                 else throw new Exception();
@@ -75,6 +79,7 @@ namespace ApplicationLayer.Controllers
                 User response = dal.GetUser(userId);
                 if (response != null)
                 {
+                    response.Password = "********";
                     return Ok(response);
                 }
                 else throw new Exception();
