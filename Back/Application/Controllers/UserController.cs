@@ -60,7 +60,7 @@ namespace ApplicationLayer.Controllers
             try
             {
                 User user = dal.GetUser(userId);
-                if (user != null && user.Name.Equals(userName) && user.Password.Equals(password))
+                if (user != null && (user.Name.Equals(userName) || user.Email.Equals(userName)) && user.Password.Equals(password))
                 {
                     ;
                 }

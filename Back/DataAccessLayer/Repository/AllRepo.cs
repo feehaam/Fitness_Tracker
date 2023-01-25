@@ -86,6 +86,7 @@ namespace DataAccessLayer.Repository
             {
                 if (user != null)
                 {
+                    user.Password = "********";
                     List<Day> days = new List<Day>();
                     foreach (Day D in user.Days)
                     {
@@ -113,6 +114,7 @@ namespace DataAccessLayer.Repository
             User user = context.Users.Where(i => i.Id == userId).Include(i => i.Days).FirstOrDefault();
             if(user != null)
             {
+                user.Password = "********";
                 List<Day> days = new List<Day>();
                 foreach (Day D in user.Days)
                 {
