@@ -12,8 +12,8 @@ export function AddFood() {
 
     function addFood() {
         let name, calories, carbohydrateDietryFiber, carbohydrateSugar, protein, fatSaturated, fatTrans,
-            cholesterol, iron, magnesium, calcium, sodium, potassium, cobalamin, vitamin, vitaminA, vitaminB, vitaminC,
-            vitaminD, vitaminE, vitaminK;
+            cholesterol, iron, magnesium, calcium, sodium, potassium, cobalamin, vitamin, vitaminA, vitaminB, 
+            vitaminC, vitaminD, vitaminE, vitaminK;
         let key = document.getElementById("key").value;
 
         let val = parseFloat(document.getElementById("iron").value);
@@ -83,9 +83,6 @@ export function AddFood() {
             "vitaminE": vitaminE,
             "vitaminK": vitaminK
         }
-
-        console.log(food);
-        console.log(key);
 
         HttpPost("create_food?adminKey="+key, food).then((response) => {
             console.log(response);
