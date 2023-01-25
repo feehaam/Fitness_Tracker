@@ -74,9 +74,19 @@ namespace DataAccessLayer.Repository
         {
             return context.Foods.ToList();
         }
+        public Food GetFood(int id)
+        {
+            Food food = context.Foods.Where(i => i.Id == id).FirstOrDefault();
+            return food;
+        }
         public List<Activity> GetAllActivities()
         {
             return context.Activities.ToList();
+        }
+        public Activity GetActivity(int id)
+        {
+            Activity activity = context.Activities.Where(i => i.Id == id).FirstOrDefault();
+            return activity;
         }
         public List<User> GetAllUsers()
         {
@@ -86,7 +96,6 @@ namespace DataAccessLayer.Repository
             {
                 if (user != null)
                 {
-                    user.Password = "********";
                     List<Day> days = new List<Day>();
                     foreach (Day D in user.Days)
                     {
@@ -114,7 +123,6 @@ namespace DataAccessLayer.Repository
             User user = context.Users.Where(i => i.Id == userId).Include(i => i.Days).FirstOrDefault();
             if(user != null)
             {
-                user.Password = "********";
                 List<Day> days = new List<Day>();
                 foreach (Day D in user.Days)
                 {
@@ -166,6 +174,5 @@ namespace DataAccessLayer.Repository
             var saved = context.SaveChanges();
             return saved > 0 ? true : false;
         }
-
     }
 }

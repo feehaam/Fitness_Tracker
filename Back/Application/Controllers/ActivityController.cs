@@ -49,5 +49,18 @@ namespace ApplicationLayer.Controllers
                 return BadRequest("Could not read activities.");
             }
         }
+        [HttpGet("/get_activity/{id}")]
+        public IActionResult get_activity(int id)
+        {
+            try
+            {
+                return Ok(dal.GetActivity(id));
+            }
+            catch (Exception e)
+            {
+                e.ToString();
+                return BadRequest("Could not read activities.");
+            }
+        }
     }
 }

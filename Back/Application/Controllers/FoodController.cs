@@ -55,5 +55,18 @@ namespace ApplicationLayer.Controllers
                 return BadRequest("Failed to parse foods");
             }
         }
+        [HttpGet("/get_food/{id}")]
+        public IActionResult get_activity(int id)
+        {
+            try
+            {
+                return Ok(dal.GetFood(id));
+            }
+            catch (Exception e)
+            {
+                e.ToString();
+                return BadRequest("Could not read activities.");
+            }
+        }
     }
 }

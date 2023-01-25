@@ -18,6 +18,7 @@ namespace ApplicationLayer.DTO
         public double Sodium { get; set; }
         public double Potassium { get; set; }
         public double Cobalamin { get; set; }
+        public double Vitamin { get; set; }
         public double VitaminA { get; set; }
         public double VitaminB { get; set; }
         public double VitaminC { get; set; }
@@ -43,6 +44,7 @@ namespace ApplicationLayer.DTO
             food.Sodium = Sodium;
             food.Potassium = Potassium;
             food.Cobalamin= Cobalamin;
+            food.Vitamin = Vitamin;
             food.VitaminC = VitaminC;
             food.VitaminD = VitaminD;
             food.VitaminB = VitaminB;

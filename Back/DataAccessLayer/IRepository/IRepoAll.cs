@@ -15,6 +15,8 @@ namespace DataAccessLayer.IRepository
         bool CreateUser(User user);
         bool AddDay(int userId, Day day);
         // READ
+        Food GetFood(int foodId);
+        Activity GetActivity(int foodId);
         List<Food> GetAllFoods();
         List<Activity> GetAllActivities();
         List<User> GetAllUsers();
