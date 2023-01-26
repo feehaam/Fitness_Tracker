@@ -1,13 +1,12 @@
 import { useNavigate } from 'react-router-dom';
-import HttpPost from '../../API/HttpPost';
 import { LoginCheck } from '../User Account/Login';
 import { getUser } from '../User Account/UserInfo';
 import HttpGet from '../../API/HttpGet';
-import { useState } from 'react';
-import Exercise from './Exercise/Exercise';
-import Food from './Meal/Food';
+import { useCallback, useEffect, useState } from 'react';
+import Edit from './Edit';
+import HttpPost from '../../API/HttpPost';
 
-export function AddDay() {
+function UpdateDay() {
     const navigate = useNavigate();
     LoginCheck().then(logged => {
         if (!logged) {
@@ -15,43 +14,75 @@ export function AddDay() {
         }
     })
 
-    const [exId, setExId] = useState([]);
+    const [day, setDay] = useState({});
+    const [exId, setExId] = useState([{}]);
     const [meal1Id, setMeal1Id] = useState([]);
     const [meal2Id, setMeal2Id] = useState([]);
     const [meal3Id, setMeal3Id] = useState([]);
     const [meal4Id, setMeal4Id] = useState([]);
     const [refreshPage, setRefreshPage] = useState(0);
 
-    let idx = 0;
-    let m1idx = 0, m2idx = 0, m3idx = 0, m4idx = 0;
-    const exerciseComps = exId.map((number) =>
-        <Exercise index={idx++} />
-    );
-    const mealComps1 = meal1Id.map((number) =>
-        <Food index={"m1" + m1idx++} />
-    )
-    const mealComps2 = meal2Id.map((number) =>
-        <Food index={"m2" + m2idx++} />
-    )
-    const mealComps3 = meal3Id.map((number) =>
-        <Food index={"m3" + m3idx++} />
-    )
-    const mealComps4 = meal4Id.map((number) =>
-        <Food index={"m4" + m4idx++} />
-    )
+    let date = '2023-01-26';
+    const userInfo = getUser();
+
+    const fetchDay = useCallback(async () => {
+        HttpGet("get_userid/" + userInfo.username).then(userIdRes => {
+            const userId = userIdRes.data;
+            HttpGet("get_user/" + userId + "?userName=" + userInfo.username + "&password=" + userInfo.password).then(userRes => {
+                const days = userRes.data.days;
+                const dateWithId = userId + "@" + date;
+                let day = null;
+                for (let i = 0; i < days.length; i++) {
+                    if (days[i].date === dateWithId)
+                        day = days[i];
+                }
+                setDay(day);
+                console.log(day);
+                for (let i = 0; i < day.exercises.length; i++) {
+                    let newAr = exId;
+                    newAr[i] = day.exercises[i];
+                    setExId(newAr);
+                    setRefreshPage(refreshPage + 1);
+                }
+                for (let m = 0; m < day.meals.length; m++) {
+                    let newAr = [];
+                    for (let i = 0; i < day.meals[m].foods.length; i++) {
+                        if (day.meals[m].foods[i] == 0);
+                        else newAr[i] = {
+                            'food': day.meals[m].foods[i],
+                            'amount': day.meals[m].amount[i]
+                        }
+                        if (m == 0 && newAr.length > 0) setMeal1Id(newAr);
+                        else if (m == 1 && newAr.length > 0) setMeal2Id(newAr);
+                        else if (m == 2 && newAr.length > 0) setMeal3Id(newAr);
+                        else if (m == 3 && newAr.length > 0) setMeal4Id(newAr);
+                        setRefreshPage(refreshPage + 1);
+                    }
+                }
+            })
+        })
+    }, []);
+
+    useEffect(() => {
+        fetchDay();
+    }, [fetchDay]);
 
     function addOrRemoveEx(add) {
+        let idx = exId.length;
         if (add) {
             let newExAr = exId;
-            newExAr[idx] = ++idx;
+            newExAr[idx] = {
+                'activity': 0,
+                'time': 0
+            }
             setExId(newExAr);
             setRefreshPage(refreshPage + 1);
         }
         else {
-            if (idx === 1) setExId([]);
+            if (exId.length === 1) setExId([]);
             let newExAr = [];
             let ptr = 0;
-            for (let i = 0; i < idx - 1; i++) {
+            for (let i = 0; i < exId.length - 1; i++) {
                 newExAr[ptr++] = exId[i];
                 setExId(newExAr);
                 setRefreshPage(refreshPage + 1);
@@ -63,69 +94,81 @@ export function AddDay() {
         if (add) {
             if (type === 'm1') {
                 let newMealAr = meal1Id;
-                newMealAr[m1idx] = ++m1idx;
+                newMealAr[newMealAr.length] = {
+                    'food': 0,
+                    'amount': 0
+                }
                 setMeal1Id(newMealAr);
                 setRefreshPage(refreshPage + 1);
             }
             if (type === 'm2') {
                 let newMealAr = meal2Id;
-                newMealAr[m2idx] = ++m2idx;
+                newMealAr[newMealAr.length] = {
+                    'food': 0,
+                    'amount': 0
+                }
                 setMeal2Id(newMealAr);
                 setRefreshPage(refreshPage + 1);
             }
+
             if (type === 'm3') {
                 let newMealAr = meal3Id;
-                newMealAr[m3idx] = ++m3idx;
+                newMealAr[newMealAr.length] = {
+                    'food': 0,
+                    'amount': 0
+                }
                 setMeal3Id(newMealAr);
                 setRefreshPage(refreshPage + 1);
             }
+
             if (type === 'm4') {
                 let newMealAr = meal4Id;
-                newMealAr[m4idx] = ++m4idx;
+                newMealAr[newMealAr.length] = {
+                    'food': 0,
+                    'amount': 0
+                }
                 setMeal4Id(newMealAr);
                 setRefreshPage(refreshPage + 1);
             }
         }
         else {
             if (type === 'm1') {
-                if (m1idx === 1) setMeal1Id([]);
+                if (meal1Id.length === 1) setMeal1Id([]);
                 let newExAr = [];
-                let ptr = 0;
-                for (let i = 0; i < m1idx - 1; i++) {
-                    newExAr[ptr++] = meal1Id[i];
+                for (let i = 0; i < meal1Id.length - 1; i++) {
+                    newExAr[i] = meal1Id[i];
                     setMeal1Id(newExAr);
                     setRefreshPage(refreshPage + 1);
                 }
             }
             if (type === 'm2') {
-                if (m2idx === 1) setMeal2Id([]);
+                if (meal2Id.length === 1) setMeal2Id([]);
                 let newExAr = [];
-                let ptr = 0;
-                for (let i = 0; i < m2idx - 1; i++) {
-                    newExAr[ptr++] = meal2Id[i];
-                    setMeal2Id(newExAr);
-                    setRefreshPage(refreshPage + 1);
+                for (let i = 0; i < meal2Id.length - 1; i++) {
+                    newExAr[i] = meal2Id[i];
                 }
+                setMeal2Id(newExAr);
+                setRefreshPage(refreshPage + 1);
             }
+
             if (type === 'm3') {
-                if (m3idx === 1) setMeal3Id([]);
+                if (meal3Id.length === 1) setMeal3Id([]);
                 let newExAr = [];
-                let ptr = 0;
-                for (let i = 0; i < m3idx - 1; i++) {
-                    newExAr[ptr++] = meal3Id[i];
-                    setMeal3Id(newExAr);
-                    setRefreshPage(refreshPage + 1);
+                for (let i = 0; i < meal3Id.length - 1; i++) {
+                    newExAr[i] = meal3Id[i];
                 }
+                setMeal3Id(newExAr);
+                setRefreshPage(refreshPage + 1);
             }
+
             if (type === 'm4') {
-                if (m4idx === 1) setMeal4Id([]);
+                if (meal4Id.length === 1) setMeal4Id([]);
                 let newExAr = [];
-                let ptr = 0;
-                for (let i = 0; i < m4idx - 1; i++) {
-                    newExAr[ptr++] = meal4Id[i];
-                    setMeal4Id(newExAr);
-                    setRefreshPage(refreshPage + 1);
+                for (let i = 0; i < meal4Id.length - 1; i++) {
+                    newExAr[i] = meal4Id[i];
                 }
+                setMeal4Id(newExAr);
+                setRefreshPage(refreshPage + 1);
             }
         }
     }
@@ -161,8 +204,6 @@ export function AddDay() {
             ]
         }
 
-        let date = document.getElementById("date").value;
-
         const w = document.getElementById("water").value;
         if (!isNaN(w) && w > 0) {
             let water = {
@@ -173,7 +214,7 @@ export function AddDay() {
         }
 
         let exercise = [], exptr = 0;
-        for (let i = 0; i < idx; i++) {
+        for (let i = 0; i < exId.length; i++) {
             const acInput = document.getElementById("exAc" + i).value;
             const tiInput = document.getElementById("exTi" + i).value;
             if (!isNaN(tiInput) && parseFloat(tiInput) > 0) {
@@ -194,7 +235,7 @@ export function AddDay() {
             "amount": []
         }
         exptr = 0;
-        for (let i = 0; i < m1idx; i++) {
+        for (let i = 0; i < meal1Id.length; i++) {
             const foInput = document.getElementById("meFom1" + i).value;
             const amInput = document.getElementById("meAmm1" + i).value;
             if (!isNaN(amInput) && parseFloat(amInput) > 0) {
@@ -210,7 +251,7 @@ export function AddDay() {
             "amount": []
         }
         exptr = 0;
-        for (let i = 0; i < m2idx; i++) {
+        for (let i = 0; i < meal2Id.length; i++) {
             const foInput = document.getElementById("meFom2" + i).value;
             const amInput = document.getElementById("meAmm2" + i).value;
             if (!isNaN(amInput) && parseFloat(amInput) > 0) {
@@ -226,7 +267,7 @@ export function AddDay() {
             "amount": []
         }
         exptr = 0;
-        for (let i = 0; i < m3idx; i++) {
+        for (let i = 0; i < meal3Id.length; i++) {
             const foInput = document.getElementById("meFom3" + i).value;
             const amInput = document.getElementById("meAmm3" + i).value;
             if (!isNaN(amInput) && parseFloat(amInput) > 0) {
@@ -242,7 +283,7 @@ export function AddDay() {
             "amount": []
         }
         exptr = 0;
-        for (let i = 0; i < m4idx; i++) {
+        for (let i = 0; i < meal4Id.length; i++) {
             const foInput = document.getElementById("meFom4" + i).value;
             const amInput = document.getElementById("meAmm4" + i).value;
             if (!isNaN(amInput) && parseFloat(amInput) > 0) {
@@ -262,28 +303,8 @@ export function AddDay() {
     }
 
     return (<>
-        <form>
-            <input type={"date"} id="date" /><br></br>
-
-            {mealComps1}
-            <input type={'button'} onClick={() => addOrRemoveMeal(true, "m1")} value={"Add meal"} />
-            <input type={'button'} onClick={() => addOrRemoveMeal(false, "m1")} value={"Remove meal"} /><hr></hr>
-            {mealComps2}
-            <input type={'button'} onClick={() => addOrRemoveMeal(true, "m2")} value={"Add meal"} />
-            <input type={'button'} onClick={() => addOrRemoveMeal(false, "m2")} value={"Remove meal"} /><hr></hr>
-            {mealComps3}
-            <input type={'button'} onClick={() => addOrRemoveMeal(true, "m3")} value={"Add meal"} />
-            <input type={'button'} onClick={() => addOrRemoveMeal(false, "m3")} value={"Remove meal"} /><hr></hr>
-            {mealComps4}
-            <input type={'button'} onClick={() => addOrRemoveMeal(true, "m4")} value={"Add meal"} />
-            <input type={'button'} onClick={() => addOrRemoveMeal(false, "m4")} value={"Remove meal"} /><hr></hr>
-            <input type={"number"} id="water" placeholder='Water' /><br></br>
-
-            {exerciseComps}
-            <input type={'button'} onClick={() => addOrRemoveEx(true)} value={"Add exercise"} />
-            <input type={'button'} onClick={() => addOrRemoveEx(false)} value={"Remove exercise"} /><br></br><br></br>
-
-            <input type={'button'} onClick={() => addDay()} value={"Add day"} />
-        </form>
+        <Edit date={date} exId={exId} addDay={addDay} addOrRemoveMeal={addOrRemoveMeal} meal1Id={meal1Id} meal2Id={meal2Id} meal3Id={meal3Id} meal4Id={meal4Id} addOrRemoveEx={addOrRemoveEx} />
     </>)
 }
+
+export default UpdateDay;
