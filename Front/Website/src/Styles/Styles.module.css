@@ -75,6 +75,7 @@
     border-radius: 20px;
     border: 1px solid #ddd;
     margin-top: 100px;
+    margin-bottom: 100px;
     box-shadow: 1px 1px 5px #333;
     text-align: center;
 }
@@ -191,6 +192,11 @@ hr {
     padding: 10px;
     max-width: 500px;
     margin: 5px;
+}
+
+.headline{
+    text-align: center;
+    font-size: larger;
 }
 
 /* 

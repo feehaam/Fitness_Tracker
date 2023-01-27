@@ -16,7 +16,7 @@ namespace ApplicationLayer.Controllers
 
         [HttpPost("/add_day/")]
         public IActionResult add_day(int userId, string userName, string password, Day day)
-        {
+        { 
             try
             {
                 User user = dal.GetUser(userId);

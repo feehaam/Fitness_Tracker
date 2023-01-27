@@ -165,9 +165,11 @@ namespace DataAccessLayer.Repository
                         day.Water.Id = D.Water.Id;
                         day.Water.Amount = D.Water.Amount;
                     }
+                    user.Days.Remove(D);
                     context.Days.Remove(D);
                     user.Days.Add(day);
-                    return Save();
+                    context.SaveChanges();
+                    return true;
                 }
             }
             return false;

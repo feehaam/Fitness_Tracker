@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Code\\Solo\\Fitness_Tracker\\Back\\DataAccessLayer\\DataAccessLayer.csproj": {}
+    "C:\\Users\\User\\OneDrive\\Desktop\\New folder\\Fitness_Tracker\\Back\\DataAccessLayer\\DataAccessLayer.csproj": {}
   },
   "projects": {
-    "D:\\Code\\Solo\\Fitness_Tracker\\Back\\DataAccessLayer\\DataAccessLayer.csproj": {
+    "C:\\Users\\User\\OneDrive\\Desktop\\New folder\\Fitness_Tracker\\Back\\DataAccessLayer\\DataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Code\\Solo\\Fitness_Tracker\\Back\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\User\\OneDrive\\Desktop\\New folder\\Fitness_Tracker\\Back\\DataAccessLayer\\DataAccessLayer.csproj",
         "projectName": "DataAccessLayer",
-        "projectPath": "D:\\Code\\Solo\\Fitness_Tracker\\Back\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectPath": "C:\\Users\\User\\OneDrive\\Desktop\\New folder\\Fitness_Tracker\\Back\\DataAccessLayer\\DataAccessLayer.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\Code\\Solo\\Fitness_Tracker\\Back\\DataAccessLayer\\obj\\",
+        "outputPath": "C:\\Users\\User\\OneDrive\\Desktop\\New folder\\Fitness_Tracker\\Back\\DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",

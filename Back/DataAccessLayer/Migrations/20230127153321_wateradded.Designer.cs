@@ -13,8 +13,8 @@ using asingment.Model;
 namespace DataAccessLayer.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20230124175339_activity-uniqued")]
-    partial class activityuniqued
+    [Migration("20230127153321_wateradded")]
+    partial class wateradded
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

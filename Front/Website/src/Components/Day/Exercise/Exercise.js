@@ -1,12 +1,15 @@
+import { useCallback, useEffect, useState } from 'react';
 import styles from '../../../Styles/Styles.module.css'
-export default function Exercise({index}) {
+import { getActivities } from '../../Helper/GetActivities';
+export default function Exercise({ index, activities }) {
     return (<>
-        <select id={"exAc"+index} className={styles.selectItem}>
-            <option value={1}>Item 1</option>
-            <option value={2}>Item 2</option>
-            <option value={3}>Item 3</option>
+        <select id={"exAc" + index} className={styles.selectItem}>
+            <option value={-1}>Select</option>
+            {activities.map((activity) => {
+                return <option value={activity.id}>{activity.name}</option>
+            })}
         </select>
-        <input type={"number"}  id={"exTi"+index} placeholder={"Enter time (min)"} className={styles.itemVal} />
-        <br></br> 
+        <input type={"number"} id={"exTi" + index} placeholder={"Enter time (min)"} className={styles.itemVal} />
+        <br></br>
     </>)
 }

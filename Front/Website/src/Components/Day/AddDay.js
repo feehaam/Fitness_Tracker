@@ -3,10 +3,12 @@ import HttpPost from '../../API/HttpPost';
 import { LoginCheck } from '../User Account/Login';
 import { getUser } from '../Helper/UserInfo'
 import HttpGet from '../../API/HttpGet';
-import { useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import Exercise from './Exercise/Exercise';
 import Food from './Meal/Food';
 import styles from '../../Styles/Styles.module.css'
+import { getActivities } from '../Helper/GetActivities';
+import { getFoods } from '../Helper/GetFoods';
 
 export function AddDay() {
     const navigate = useNavigate();
@@ -25,22 +27,38 @@ export function AddDay() {
     const [meal4Id, setMeal4Id] = useState([]);
     const [refreshPage, setRefreshPage] = useState(0);
 
+    const [activities, setActivities] = useState([]);
+    const [foods, setFoods] = useState([]);
+
+    const fetchActivities = useCallback(async () => {
+        getActivities().then(act => {
+            setActivities(act);
+        })
+        getFoods().then(fd => {
+            setFoods(fd);
+        })
+    }, []);
+    useEffect(() => {
+        fetchActivities();
+    }, [fetchActivities]);
+
     let idx = 0;
     let m1idx = 0, m2idx = 0, m3idx = 0, m4idx = 0;
+    
     const exerciseComps = exId.map((number) =>
-        <Exercise index={idx++} />
+        <Exercise index={idx++} activities={activities} />
     );
     const mealComps1 = meal1Id.map((number) =>
-        <Food index={"m1" + m1idx++} />
+        <Food foods={foods} index={"m1" + m1idx++} />
     )
     const mealComps2 = meal2Id.map((number) =>
-        <Food index={"m2" + m2idx++} />
+        <Food foods={foods} index={"m2" + m2idx++} />
     )
     const mealComps3 = meal3Id.map((number) =>
-        <Food index={"m3" + m3idx++} />
+        <Food foods={foods} index={"m3" + m3idx++} />
     )
     const mealComps4 = meal4Id.map((number) =>
-        <Food index={"m4" + m4idx++} />
+        <Food foods={foods} index={"m4" + m4idx++} />
     )
 
     function addOrRemoveEx(add) {

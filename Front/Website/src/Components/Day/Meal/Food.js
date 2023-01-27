@@ -1,12 +1,13 @@
 import styles from '../../../Styles/Styles.module.css'
-export default function Food({index}) {
+export default function Food({ index, foods }) {
     return (<>
-        <select id={"meFo"+index} className={styles.selectItem}>
-            <option value={1}>Item 1</option>
-            <option value={2}>Item 2</option>
-            <option value={3}>Item 3</option>
+        <select id={"meFo" + index} className={styles.selectItem}>
+            <option value={-1}>Select</option>
+            {foods.map((food) => {
+                return <option value={food.id}>{food.name}</option>
+            })}
         </select>
-        <input type={"number"}  id={"meAm"+index} placeholder={"Enter amount (g)"} className={styles.itemVal} />
-        <br></br> 
+        <input type={"number"} id={"meAm" + index} placeholder={"Enter amount (g)"} className={styles.itemVal} />
+        <br></br>
     </>)
 }

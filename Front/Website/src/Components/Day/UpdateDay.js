@@ -5,6 +5,7 @@ import HttpGet from '../../API/HttpGet';
 import { useCallback, useEffect, useState } from 'react';
 import Edit from './Edit';
 import HttpPost from '../../API/HttpPost';
+import { getActivities } from '../Helper/GetActivities';
 
 function UpdateDay() {
     const navigate = useNavigate();
@@ -21,6 +22,7 @@ function UpdateDay() {
     const [meal3Id, setMeal3Id] = useState([]);
     const [meal4Id, setMeal4Id] = useState([]);
     const [refreshPage, setRefreshPage] = useState(0);
+
 
     let date = '2023-01-27';
     const userInfo = getUser();
@@ -291,9 +293,8 @@ function UpdateDay() {
             }
         }
         dayData.meals[mi++] = meal4;
-
-        date = userId + "@" + date;
-        dayData.date = date;
+        
+        dayData.date = userId + "@" + date;
 
         console.log(dayData);
 
@@ -302,7 +303,7 @@ function UpdateDay() {
     }
 
     return (<>
-        <Edit date={date} exId={exId} addDay={addDay} addOrRemoveMeal={addOrRemoveMeal} meal1Id={meal1Id} meal2Id={meal2Id} meal3Id={meal3Id} meal4Id={meal4Id} addOrRemoveEx={addOrRemoveEx} />
+        <Edit date={date} exId={exId} addDay={addDay} addOrRemoveMeal={addOrRemoveMeal} day={day} meal1Id={meal1Id} meal2Id={meal2Id} meal3Id={meal3Id} meal4Id={meal4Id} addOrRemoveEx={addOrRemoveEx} />
     </>)
 }
 
