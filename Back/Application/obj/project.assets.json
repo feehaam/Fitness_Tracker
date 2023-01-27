@@ -1656,11 +1656,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\OneDrive\\Desktop\\New folder\\Fitness_Tracker\\Back\\Application\\ApplicationLayer.csproj",
+      "projectUniqueName": "D:\\Code\\Solo\\Fitness_Tracker\\Back\\Application\\ApplicationLayer.csproj",
       "projectName": "ApplicationLayer",
-      "projectPath": "C:\\Users\\User\\OneDrive\\Desktop\\New folder\\Fitness_Tracker\\Back\\Application\\ApplicationLayer.csproj",
+      "projectPath": "D:\\Code\\Solo\\Fitness_Tracker\\Back\\Application\\ApplicationLayer.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\OneDrive\\Desktop\\New folder\\Fitness_Tracker\\Back\\Application\\obj\\",
+      "outputPath": "D:\\Code\\Solo\\Fitness_Tracker\\Back\\Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1677,8 +1677,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\User\\OneDrive\\Desktop\\New folder\\Fitness_Tracker\\Back\\DataAccessLayer\\DataAccessLayer.csproj": {
-              "projectPath": "C:\\Users\\User\\OneDrive\\Desktop\\New folder\\Fitness_Tracker\\Back\\DataAccessLayer\\DataAccessLayer.csproj"
+            "D:\\Code\\Solo\\Fitness_Tracker\\Back\\DataAccessLayer\\DataAccessLayer.csproj": {
+              "projectPath": "D:\\Code\\Solo\\Fitness_Tracker\\Back\\DataAccessLayer\\DataAccessLayer.csproj"
             }
           }
         }

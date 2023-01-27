@@ -21,10 +21,11 @@ function UpdateDay() {
     const [meal2Id, setMeal2Id] = useState([]);
     const [meal3Id, setMeal3Id] = useState([]);
     const [meal4Id, setMeal4Id] = useState([]);
+    const [wat, setWat] = useState(-1);
     const [refreshPage, setRefreshPage] = useState(0);
 
 
-    let date = '2023-01-27';
+    let date = '2023-01-15';
     const userInfo = getUser();
 
     const fetchDay = useCallback(async () => {
@@ -39,6 +40,7 @@ function UpdateDay() {
                         day = days[i];
                 }
                 setDay(day);
+                setWat(day.water.amount);
                 for (let i = 0; i < day.exercises.length; i++) {
                     let newAr = exId;
                     newAr[i] = day.exercises[i];
@@ -298,12 +300,16 @@ function UpdateDay() {
 
         console.log(dayData);
 
-        const submitResponse = await HttpPost("add_day?userId=" + userId + "&userName=" + user.username + "&password=" + user.password, dayData);
-        console.log(submitResponse);
+        const updateResponse = await HttpPost("update_day?userId=" + userId + "&userName=" + user.username + "&password=" + user.password, dayData);
+        console.log(updateResponse);
+        
+        const addResponse = await HttpPost("add_day?userId=" + userId + "&userName=" + user.username + "&password=" + user.password, dayData);
+        console.log(addResponse);
+        
     }
 
     return (<>
-        <Edit date={date} exId={exId} addDay={addDay} addOrRemoveMeal={addOrRemoveMeal} day={day} meal1Id={meal1Id} meal2Id={meal2Id} meal3Id={meal3Id} meal4Id={meal4Id} addOrRemoveEx={addOrRemoveEx} />
+        <Edit wat={wat} date={date} exId={exId} addDay={addDay} addOrRemoveMeal={addOrRemoveMeal} day={day} meal1Id={meal1Id} meal2Id={meal2Id} meal3Id={meal3Id} meal4Id={meal4Id} addOrRemoveEx={addOrRemoveEx} />
     </>)
 }
 

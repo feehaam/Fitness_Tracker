@@ -54,7 +54,7 @@ namespace ApplicationLayer.Controllers
         }
 
 
-        [HttpPut("/update_day/")]
+        [HttpPost("/update_day/")]
         public IActionResult update_day(int userId, string userName, string password, Day day)
         {
             try

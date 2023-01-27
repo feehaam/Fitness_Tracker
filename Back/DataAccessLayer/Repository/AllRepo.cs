@@ -167,7 +167,6 @@ namespace DataAccessLayer.Repository
                     }
                     user.Days.Remove(D);
                     context.Days.Remove(D);
-                    user.Days.Add(day);
                     context.SaveChanges();
                     return true;
                 }
