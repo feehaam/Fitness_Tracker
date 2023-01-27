@@ -1,11 +1,12 @@
 import { useNavigate } from 'react-router-dom';
 import HttpPost from '../../API/HttpPost';
 import { LoginCheck } from '../User Account/Login';
-import { getUser } from '../User Account/UserInfo';
+import { getUser } from '../Helper/UserInfo'
 import HttpGet from '../../API/HttpGet';
 import { useState } from 'react';
 import Exercise from './Exercise/Exercise';
 import Food from './Meal/Food';
+import styles from '../../Styles/Styles.module.css'
 
 export function AddDay() {
     const navigate = useNavigate();
@@ -14,6 +15,8 @@ export function AddDay() {
             navigate('/login', { replace: true });
         }
     })
+
+    const todayDate = new Date().toJSON().slice(0, 10);
 
     const [exId, setExId] = useState([]);
     const [meal1Id, setMeal1Id] = useState([]);
@@ -262,28 +265,42 @@ export function AddDay() {
     }
 
     return (<>
-        <form>
-            <input type={"date"} id="date" /><br></br>
-
+        <form className={styles.containerCen}>
+            <div className={styles.title}>Date</div><br></br>
+            <input type={"date"} id="date" className={styles.i} defaultValue={todayDate} /><br></br>
+            <hr></hr>
+            <div className={styles.title}>Breakfast</div><br></br>
             {mealComps1}
-            <input type={'button'} onClick={() => addOrRemoveMeal(true, "m1")} value={"Add meal"} />
-            <input type={'button'} onClick={() => addOrRemoveMeal(false, "m1")} value={"Remove meal"} /><hr></hr>
+            {mealComps1.length == 0 ? <div className={styles.noFood}>No food has been added to breakfast. Click on add food to select some foods and enter how much you've ate.</div> : ""}
+            <input className={styles.afbtn} type={'button'} onClick={() => addOrRemoveMeal(true, "m1")} value={"(+) Add meal"} />
+            <input className={styles.afbtn2} type={'button'} onClick={() => addOrRemoveMeal(false, "m1")} value={"(-) Remove meal"} /><hr></hr>
+            <div className={styles.title}>Lunch</div><br></br>
             {mealComps2}
-            <input type={'button'} onClick={() => addOrRemoveMeal(true, "m2")} value={"Add meal"} />
-            <input type={'button'} onClick={() => addOrRemoveMeal(false, "m2")} value={"Remove meal"} /><hr></hr>
+            {mealComps2.length == 0 ? <div className={styles.noFood}>No food has been added to lunch. Click on add food to select some foods and enter how much you've ate.</div> : ""}
+            <input className={styles.afbtn} type={'button'} onClick={() => addOrRemoveMeal(true, "m2")} value={"(+) Add meal"} />
+            <input className={styles.afbtn2} type={'button'} onClick={() => addOrRemoveMeal(false, "m2")} value={"(-) Remove meal"} /><hr></hr>
+            <div className={styles.title}>Dinner</div><br></br>
             {mealComps3}
-            <input type={'button'} onClick={() => addOrRemoveMeal(true, "m3")} value={"Add meal"} />
-            <input type={'button'} onClick={() => addOrRemoveMeal(false, "m3")} value={"Remove meal"} /><hr></hr>
+            {mealComps3.length == 0 ? <div className={styles.noFood}>No food has been added to dinner. Click on add food to select some foods and enter how much you've ate.</div> : ""}
+            <input className={styles.afbtn} type={'button'} onClick={() => addOrRemoveMeal(true, "m3")} value={"(+) Add meal"} />
+            <input className={styles.afbtn2} type={'button'} onClick={() => addOrRemoveMeal(false, "m3")} value={"(-) Remove meal"} /><hr></hr>
+            <div className={styles.title}>Snacks</div><br></br>
             {mealComps4}
-            <input type={'button'} onClick={() => addOrRemoveMeal(true, "m4")} value={"Add meal"} />
-            <input type={'button'} onClick={() => addOrRemoveMeal(false, "m4")} value={"Remove meal"} /><hr></hr>
-            <input type={"number"} id="water" placeholder='Water' /><br></br>
-
+            {mealComps4.length == 0 ? <div className={styles.noFood}>No food has been added to snacks. Click on add food to select some foods and enter how much you've ate.</div> : ""}
+            <input className={styles.afbtn} type={'button'} onClick={() => addOrRemoveMeal(true, "m4")} value={"(+) Add meal"} />
+            <input className={styles.afbtn2} type={'button'} onClick={() => addOrRemoveMeal(false, "m4")} value={"(-) Remove meal"} /><hr></hr>
+            <div className={styles.title}>Water (liter)</div><br></br>
+            <input type={"number"} className={styles.i} id="water"/><br></br>
+            <hr></hr>
+            <div className={styles.title}>Exercise & workouts</div><br></br>
             {exerciseComps}
-            <input type={'button'} onClick={() => addOrRemoveEx(true)} value={"Add exercise"} />
-            <input type={'button'} onClick={() => addOrRemoveEx(false)} value={"Remove exercise"} /><br></br><br></br>
-
-            <input type={'button'} onClick={() => addDay()} value={"Add day"} />
+            {exerciseComps.length == 0 ? <div className={styles.noFood}>No exercise has been added! Click on add exercise to select some exercise and enter how many minutes you've worked out.</div> : ""}
+            <input className={styles.afbtn} type={'button'} onClick={() => addOrRemoveEx(true)} value={"(+) Add exercise"} />
+            <input className={styles.afbtn2} type={'button'} onClick={() => addOrRemoveEx(false)} value={"(-) Remove exercise"} /><br></br><br></br>
+            <hr></hr>
+            <div className={styles.enter}>
+            <input className={styles.ibtn} type={'button'} onClick={() => addDay()} value={"Add day"} />
+            </div>
         </form>
     </>)
 }

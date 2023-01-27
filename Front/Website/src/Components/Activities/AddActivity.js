@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import HttpPost from '../../API/HttpPost';
 import { LoginCheck } from '../User Account/Login';
+import styles from '../../Styles/Styles.module.css'
 
 export function AddActivity() {
     const navigate = useNavigate();
@@ -32,18 +33,20 @@ export function AddActivity() {
     }
 
     return (<>
-        <form>
+        <form className={styles.container}>
 
-            <label for="name">Name</label> <br></br>
-            <input type={"text"} id={"name"} /><br></br>
+            <label className={styles.label} for="name">Name</label> <br></br>
+            <input className={styles.i} type={"text"} id={"name"} /><br></br>
 
-            <label for="calories">Calories burn per hour</label> <br></br>
-            <input type={"number"} id={"calorieBurnPerHour"} /><br></br>
+            <label className={styles.label} for="calories">Calories burn per hour</label> <br></br>
+            <input className={styles.i} type={"number"} id={"calorieBurnPerHour"} /><br></br>
 
-            <label for="key">Admin key</label> <br></br>
-            <input type={"text"} id={"key"} placeholder="" /><br></br>
+            <label className={styles.label} for="key">Admin key</label> <br></br>
+            <input className={styles.i} type={"text"} id={"key"} placeholder="" /><br></br>
 
-            <input type={"button"} value="Add food" onClick={addActivity} />
+            <hr></hr>
+
+            <div className={styles.enter}><input type={"button"} className={styles.ibtn} value="Add activity" onClick={addActivity} /></div>
 
         </form>
     </>)

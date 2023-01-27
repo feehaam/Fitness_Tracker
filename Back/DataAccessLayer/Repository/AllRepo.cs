@@ -160,6 +160,11 @@ namespace DataAccessLayer.Repository
             {
                 if (D.Date.Equals(day.Date))
                 {
+                    if(day.Water == null || day.Water == null || day.Water.Amount == 0)
+                    {
+                        day.Water.Id = D.Water.Id;
+                        day.Water.Amount = D.Water.Amount;
+                    }
                     context.Days.Remove(D);
                     user.Days.Add(day);
                     return Save();

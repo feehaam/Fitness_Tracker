@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import { LoginCheck } from '../User Account/Login';
-import { getUser } from '../User Account/UserInfo';
+import { getUser } from "../Helper/UserInfo"
 import HttpGet from '../../API/HttpGet';
 import { useCallback, useEffect, useState } from 'react';
 import Edit from './Edit';
@@ -15,14 +15,14 @@ function UpdateDay() {
     })
 
     const [day, setDay] = useState({});
-    const [exId, setExId] = useState([{}]);
+    const [exId, setExId] = useState([]);
     const [meal1Id, setMeal1Id] = useState([]);
     const [meal2Id, setMeal2Id] = useState([]);
     const [meal3Id, setMeal3Id] = useState([]);
     const [meal4Id, setMeal4Id] = useState([]);
     const [refreshPage, setRefreshPage] = useState(0);
 
-    let date = '2023-01-26';
+    let date = '2023-01-27';
     const userInfo = getUser();
 
     const fetchDay = useCallback(async () => {
@@ -37,7 +37,6 @@ function UpdateDay() {
                         day = days[i];
                 }
                 setDay(day);
-                console.log(day);
                 for (let i = 0; i < day.exercises.length; i++) {
                     let newAr = exId;
                     newAr[i] = day.exercises[i];

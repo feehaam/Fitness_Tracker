@@ -1,4 +1,4 @@
-import { setUser } from "./UserInfo";
+import { setUser } from "../Helper/UserInfo"
 import { useNavigate } from 'react-router-dom';
 
 export function Logout(){

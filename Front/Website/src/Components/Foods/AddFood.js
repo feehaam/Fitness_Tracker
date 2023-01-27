@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import HttpPost from '../../API/HttpPost';
 import { LoginCheck } from '../User Account/Login';
+import styles from '../../Styles/Styles.module.css'
 
 export function AddFood() {
     const navigate = useNavigate();
@@ -12,7 +13,7 @@ export function AddFood() {
 
     function addFood() {
         let name, calories, carbohydrateDietryFiber, carbohydrateSugar, protein, fatSaturated, fatTrans,
-            cholesterol, iron, magnesium, calcium, sodium, potassium, cobalamin, vitamin, vitaminA, vitaminB, 
+            cholesterol, iron, magnesium, calcium, sodium, potassium, cobalamin, vitamin, vitaminA, vitaminB,
             vitaminC, vitaminD, vitaminE, vitaminK;
         let key = document.getElementById("key").value;
 
@@ -84,78 +85,82 @@ export function AddFood() {
             "vitaminK": vitaminK
         }
 
-        HttpPost("create_food?adminKey="+key, food).then((response) => {
+        HttpPost("create_food?adminKey=" + key, food).then((response) => {
             console.log(response);
         })
     }
 
     return (<>
-        <form>
+        <form className={styles.container}>
 
-            <label for="name">Name</label> <br></br>
-            <input type={"text"} id={"name"} /><br></br>
+            <label for="name" className={styles.label}>Name</label> <br></br>
+            <input type={"text"} id={"name"} className={styles.i} /><br></br>
 
-            <label for="calories">Calories</label> <br></br>
-            <input type={"number"} id={"calories"} /><br></br>
+            <label for="calories" className={styles.label}>Calories</label> <br></br>
+            <input type={"number"} id={"calories"} className={styles.i} /><br></br>
 
-            <label for="carbohydrateDietryFiber">Carb. DietryFiber</label> <br></br>
-            <input type={"number"} id={"carbohydrateDietryFiber"} /><br></br>
+            <label for="carbohydrateDietryFiber" className={styles.label}>Carb. DietryFiber</label> <br></br>
+            <input type={"number"} id={"carbohydrateDietryFiber"} className={styles.i} /><br></br>
 
-            <label for="carbohydrateSugar">Car. Sugar</label> <br></br>
-            <input type={"number"} id={"carbohydrateSugar"} /><br></br>
+            <label for="carbohydrateSugar" className={styles.label}>Car. Sugar</label> <br></br>
+            <input type={"number"} id={"carbohydrateSugar"} className={styles.i} /><br></br>
 
-            <label for="protein">Protein</label> <br></br>
-            <input type={"number"} id={"protein"} /><br></br>
+            <label for="protein" className={styles.label}>Protein</label> <br></br>
+            <input type={"number"} id={"protein"} className={styles.i} /><br></br>
 
-            <label for="fatSaturated">Fat Saturated</label> <br></br>
-            <input type={"number"} id={"fatSaturated"} /><br></br>
+            <label for="fatSaturated" className={styles.label}>Fat Saturated</label> <br></br>
+            <input type={"number"} id={"fatSaturated"} className={styles.i} /><br></br>
 
-            <label for="fatTrans">Fat Trans</label> <br></br>
-            <input type={"number"} id={"fatTrans"} /><br></br>
+            <label for="fatTrans" className={styles.label}>Fat Trans</label> <br></br>
+            <input type={"number"} id={"fatTrans"} className={styles.i} /><br></br>
 
-            <label for="cholesterol">Cholesterol</label> <br></br>
-            <input type={"number"} id={"cholesterol"} /><br></br>
+            <label for="cholesterol" className={styles.label}>Cholesterol</label> <br></br>
+            <input type={"number"} id={"cholesterol"} className={styles.i} /><br></br>
 
-            <label for="iron">Iron</label> <br></br>
-            <input type={"number"} id={"iron"} /><br></br>
+            <label for="iron" className={styles.label}>Iron</label> <br></br>
+            <input type={"number"} id={"iron"} className={styles.i} /><br></br>
 
-            <label for="magnesium">Magnesium</label> <br></br>
-            <input type={"number"} id={"magnesium"} /><br></br>
+            <label for="magnesium" className={styles.label}>Magnesium</label> <br></br>
+            <input type={"number"} id={"magnesium"} className={styles.i} /><br></br>
 
-            <label for="calcium">Calcium</label> <br></br>
-            <input type={"number"} id={"calcium"} /><br></br>
+            <label for="calcium" className={styles.label}>Calcium</label> <br></br>
+            <input type={"number"} id={"calcium"} className={styles.i} /><br></br>
 
-            <label for="sodium">Sodium</label> <br></br>
-            <input type={"number"} id={"sodium"} /><br></br>
+            <label for="sodium" className={styles.label}>Sodium</label> <br></br>
+            <input type={"number"} id={"sodium"} className={styles.i} /><br></br>
 
-            <label for="potassium">Potassium</label> <br></br>
-            <input type={"number"} id={"potassium"} /><br></br>
+            <label for="potassium" className={styles.label}>Potassium</label> <br></br>
+            <input type={"number"} id={"potassium"} className={styles.i} /><br></br>
 
-            <label for="cobalamin">Cobalamin</label> <br></br>
-            <input type={"number"} id={"cobalamin"} /><br></br>
+            <label for="cobalamin" className={styles.label}>Cobalamin</label> <br></br>
+            <input className={styles.i} type={"number"} id={"cobalamin"} /><br></br>
 
-            <label for="vitaminA">VitaminA</label> <br></br>
-            <input type={"number"} id={"vitaminA"} /><br></br>
+            <label className={styles.label} for="vitaminA">VitaminA</label> <br></br>
+            <input className={styles.i} type={"number"} id={"vitaminA"} /><br></br>
 
-            <label for="vitaminB">VitaminB</label> <br></br>
-            <input type={"number"} id={"vitaminB"} /><br></br>
+            <label className={styles.label} for="vitaminB">VitaminB</label> <br></br>
+            <input className={styles.i} type={"number"} id={"vitaminB"} /><br></br>
 
-            <label for="vitaminC">VitaminC</label> <br></br>
-            <input type={"number"} id={"vitaminC"} /><br></br>
+            <label className={styles.label} for="vitaminC">VitaminC</label> <br></br>
+            <input className={styles.i} type={"number"} id={"vitaminC"} /><br></br>
 
-            <label for="vitaminD">VitaminD</label> <br></br>
-            <input type={"number"} id={"vitaminD"} /><br></br>
+            <label className={styles.label} for="vitaminD">VitaminD</label> <br></br>
+            <input className={styles.i} type={"number"} id={"vitaminD"} /><br></br>
 
-            <label for="vitaminE">VitaminE</label> <br></br>
-            <input type={"number"} id={"vitaminE"} /><br></br>
+            <label className={styles.label} for="vitaminE">VitaminE</label> <br></br>
+            <input className={styles.i} type={"number"} id={"vitaminE"} /><br></br>
 
-            <label for="vitaminK">VitaminK</label> <br></br>
-            <input type={"number"} id={"vitaminK"} /><br></br>
+            <label className={styles.label} for="vitaminK">VitaminK</label> <br></br>
+            <input className={styles.i} type={"number"} id={"vitaminK"} /><br></br>
 
-            <label for="key">Admin key</label> <br></br>
-            <input type={"text"} id={"key"} placeholder="" /><br></br>
+            <label className={styles.label} for="key">Admin key</label> <br></br>
+            <input className={styles.i} type={"text"} id={"key"} placeholder="" /><br></br>
 
-            <input type={"button"} value="Add food" onClick={addFood} />
+            <hr></hr>
+
+            <div className={styles.enter}>
+                <input type={"button"} className={styles.ibtn} value="Add food" onClick={addFood} />
+            </div>
 
         </form>
     </>)

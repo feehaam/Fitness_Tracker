@@ -1,0 +1,200 @@
+.i {
+    padding: 10px;
+    max-width: 750px;
+    min-width: 500px;
+    margin: 5px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    background-color: rgba(243, 243, 243, 0.25);
+    box-shadow: 1px 1px 2px rgb(64, 64, 64);
+}
+
+.i:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.ihalf {
+    padding: 10px;
+    max-width: 375px;
+    min-width: 180px;
+    margin: 5px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    background-color: rgba(243, 243, 243, 0.25);
+    box-shadow: 1px 1px 2px rgb(64, 64, 64);
+}
+
+.eightty {
+    padding: 10px;
+    max-width: 640px;
+    min-width: 390px;
+    margin: 5px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    background-color: rgba(243, 243, 243, 0.25);
+    box-shadow: 1px 1px 2px rgb(64, 64, 64);
+}
+
+.ibtn {
+    max-width: 375px;
+    min-width: 185px;
+    font-weight: bold;
+    background-color: rgba(54, 54, 54, 0.50);
+    box-shadow: 3px 3px 5px rgb(64, 64, 64);
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    color: white;
+}
+
+.ibtn:hover {
+    background-color: rgb(0, 117, 29);
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+.container {
+    padding: 20px;
+    width: fit-content;
+    margin: auto;
+    background-color: rgba(244, 244, 244, 0.25);
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    margin-top: 100px;
+    box-shadow: 1px 1px 5px #333;
+}
+
+.containerCen {
+    padding: 20px;
+    width: fit-content;
+    margin: auto;
+    background-color: rgba(244, 244, 244, 0.25);
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    margin-top: 100px;
+    box-shadow: 1px 1px 5px #333;
+    text-align: center;
+}
+
+.inner {
+    text-align: left;
+    width: fit-content;
+}
+
+.label {
+    text-shadow: 1px 1px 1px gray;
+}
+
+.label:hover {
+    cursor: pointer;
+}
+
+.enter {
+    text-align: right;
+}
+
+hr {
+    border-top: 1px solid #ddd;
+    margin: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.sel {
+    padding: 10px;
+    max-width: 100px;
+    min-width: 100px;
+    margin: 5px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    background-color: rgba(243, 243, 243, 0.25);
+    box-shadow: 1px 1px 2px rgb(64, 64, 64);
+}
+
+.title {
+    font-weight: bold;
+    float: left;
+}
+
+.afbtn {
+    background-color: rgba(181, 255, 180, 0.5);
+    border: 0;
+    border-radius: .5rem;
+    box-sizing: border-box;
+    color: #111827;
+    font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: .875rem;
+    font-weight: 600;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+    padding: 10px;
+    max-width: 375px;
+    min-width: 180px;
+    margin: 5px;
+}
+
+.afbtn:hover {
+    background-color: rgb(249, 250, 251);
+}
+
+.afbtn2 {
+    background-color: rgba(255, 180, 180, 0.5);
+    border: 0;
+    border-radius: .5rem;
+    box-sizing: border-box;
+    color: #111827;
+    font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: .875rem;
+    font-weight: 600;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+    padding: 10px;
+    max-width: 375px;
+    min-width: 180px;
+    margin: 5px;
+}
+
+.afbtn2:hover {
+    background-color: rgb(249, 250, 251);
+}
+
+.selectItem {
+    padding: 10px;
+    max-width: 500px;
+    min-width: 320px;
+    margin: 5px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    background-color: rgba(243, 243, 243, 0.25);
+    box-shadow: 1px 1px 2px rgb(64, 64, 64);
+}
+
+.itemVal {
+    padding: 10px;
+    max-width: 200px;
+    min-width: 100px;
+    margin: 5px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    background-color: rgba(243, 243, 243, 0.25);
+    box-shadow: 1px 1px 2px rgb(64, 64, 64);
+}
+
+.itemVal:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.noFood{
+    padding: 10px;
+    max-width: 500px;
+    margin: 5px;
+}
+
+/* 
+
+body {
+    background-color: #111827;
+} */

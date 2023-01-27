@@ -1,6 +1,7 @@
 import httpGet from "../../API/HttpGet";
-import { getUser, setUser } from "./UserInfo";
+import { getUser, setUser } from "../Helper/UserInfo"
 import { useNavigate } from 'react-router-dom';
+import styles from '../../Styles/Styles.module.css'
 
 function Login() {
     const navigate = useNavigate();
@@ -23,10 +24,13 @@ function Login() {
         }
     }
     return (<>
-        <form>
-            <input type={"text"} id="username" /><br></br>
-            <input type={"password"} id="password" /><br></br>
-            <input type={"button"} id="submit" value={"Login"} onClick={() => { signIn() }} />
+        <form className={styles.container}>
+            <label className={styles.label} for='username'>Username or Email</label><br></br>
+            <input className={styles.i} type={"text"} id="username" /><br></br>
+            <label className={styles.label} for='password'>Password</label><br></br>
+            <input className={styles.i} type={"password"} id="password" /><br></br>
+            <hr></hr>
+            <div className={styles.enter}><input type={"button"} id="submit" value={"Login"} onClick={() => { signIn() }} className={styles.ibtn} /></div>
         </form>
     </>)
 }

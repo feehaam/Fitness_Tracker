@@ -132,5 +132,38 @@ namespace ApplicationLayer.Controllers
                 return BadRequest("Failed to add weight.");
             }
         }
+
+        [HttpDelete("/delete_weight/")]
+        public IActionResult delete_weight(int userId, string userName, string password, double weight, string date)
+        {
+            try
+            {
+                User user = dal.GetUser(userId);
+                if (user != null && user.Name.Equals(userName) && user.Password.Equals(password))
+                {
+                    for(int i = 0; i < user.Weights.Count; i++)
+                    {
+                        if (user.Weights.ElementAt(i) == weight && user.WeightDates.ElementAt(i).Equals(date))
+                        {
+                            user.Weights.RemoveAt(i);
+                            user.WeightDates.RemoveAt(i);
+                            if(user.WeightDates.Count == 0 || user.Weights.Count == 0)
+                            {
+                                user.Weights.Clear();
+                                user.WeightDates.Clear();
+                            }
+                            dal.Save() ;
+                            return Ok("Deleted");
+                        }
+                    }
+                    return BadRequest("Failed to delete weight.");
+                }
+                else return BadRequest("Login with corrent infromation first!");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest("Failed to add weight.");
+            }
+        }
     }
 }
