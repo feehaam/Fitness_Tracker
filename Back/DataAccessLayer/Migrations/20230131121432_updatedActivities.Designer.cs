@@ -13,8 +13,8 @@ using asingment.Model;
 namespace DataAccessLayer.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20230127153321_wateradded")]
-    partial class wateradded
+    [Migration("20230131121432_updatedActivities")]
+    partial class updatedActivities
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -40,6 +40,14 @@ namespace DataAccessLayer.Migrations
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("text");
+
+                    b.Property<List<string>>("OtherParameterName")
+                        .IsRequired()
+                        .HasColumnType("text[]");
+
+                    b.Property<List<double>>("OtherParameterValue")
+                        .IsRequired()
+                        .HasColumnType("double precision[]");
 
                     b.HasKey("Id");
 

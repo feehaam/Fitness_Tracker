@@ -7,7 +7,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace DataAccessLayer.Migrations
 {
     /// <inheritdoc />
-    public partial class wateradded : Migration
+    public partial class updatedActivities : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -19,7 +19,9 @@ namespace DataAccessLayer.Migrations
                     Id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     Name = table.Column<string>(type: "text", nullable: false),
-                    CalorieBurnPerHour = table.Column<double>(type: "double precision", nullable: false)
+                    CalorieBurnPerHour = table.Column<double>(type: "double precision", nullable: false),
+                    OtherParameterName = table.Column<List<string>>(type: "text[]", nullable: false),
+                    OtherParameterValue = table.Column<List<double>>(type: "double precision[]", nullable: false)
                 },
                 constraints: table =>
                 {

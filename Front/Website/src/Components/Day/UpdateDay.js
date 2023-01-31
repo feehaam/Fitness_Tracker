@@ -25,7 +25,7 @@ function UpdateDay() {
     const [refreshPage, setRefreshPage] = useState(0);
 
 
-    let date = '2023-01-15';
+    let date = '2023-01-31';
     const userInfo = getUser();
 
     const fetchDay = useCallback(async () => {

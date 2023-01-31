@@ -1,4 +1,3 @@
-import Exercise from './Exercise/Exercise';
 import ExerciseUpdate from './Exercise/ExerciseUpdate';
 import FoodUpdate from './Meal/FoodUpdate';
 import styles from '../../Styles/Styles.module.css'

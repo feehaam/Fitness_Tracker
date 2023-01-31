@@ -38,6 +38,14 @@ namespace DataAccessLayer.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<List<string>>("OtherParameterName")
+                        .IsRequired()
+                        .HasColumnType("text[]");
+
+                    b.Property<List<double>>("OtherParameterValue")
+                        .IsRequired()
+                        .HasColumnType("double precision[]");
+
                     b.HasKey("Id");
 
                     b.HasIndex("Name")
