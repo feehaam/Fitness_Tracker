@@ -76,6 +76,7 @@ export function AddActivity() {
         }
     }
 
+
     return (<>
         <form className={styles.containerCen}>
 

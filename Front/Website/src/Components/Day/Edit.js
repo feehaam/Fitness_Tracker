@@ -44,15 +44,16 @@ function Edit({ date, exId, meal1Id, meal2Id, meal3Id, meal4Id, addOrRemoveEx, a
     );
 
     let waterNull = true;
-    function setWater(){
-        if(waterNull){
+    function setWater() {
+        if (waterNull) {
             document.getElementById('water').value = wat;
             waterNull = false;
         }
     }
 
     return (<div className={styles.containerCen}><br></br>
-        <div className={styles.headline}>UPDATING {date}</div><br></br>
+        <div><h3>Update food & exercises</h3></div>
+        <div><h3>{date}</h3></div>
         <hr></hr><br></br>
 
         <div className={styles.title}>Breakfast</div><br></br>
@@ -75,8 +76,8 @@ function Edit({ date, exId, meal1Id, meal2Id, meal3Id, meal4Id, addOrRemoveEx, a
         {mealComps4.length == 0 ? <div className={styles.noFood}>No food has been added to snacks. Click on add food to select some foods and enter how much you've ate.</div> : ""}
         <input className={styles.afbtn} type={'button'} onClick={() => addOrRemoveMeal(true, "m4")} value={"(+) Add meal"} />
         <input className={styles.afbtn2} type={'button'} onClick={() => addOrRemoveMeal(false, "m4")} value={"(-) Remove meal"} /><hr></hr>
-        <div className={styles.title} onMouseEnter={()=>{console.log(wat)}}>Water (liter)</div><br></br>
-        <input type={"number"} className={styles.i}  id="water" onMouseEnter={()=>{setWater()}} /><br></br>
+        <div className={styles.title} onMouseEnter={() => { console.log(wat) }}>Water (liter)</div><br></br>
+        <input type={"number"} className={styles.i} id="water" onMouseEnter={() => { setWater() }} /><br></br>
         <hr></hr>
         <div className={styles.title}>Exercise & workouts</div><br></br>
         {exerciseComps}

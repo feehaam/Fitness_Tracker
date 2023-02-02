@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { LoginCheck } from '../User Account/Login';
 import { getUser } from "../Helper/UserInfo"
 import HttpGet from '../../API/HttpGet';
@@ -24,8 +24,10 @@ function UpdateDay() {
     const [wat, setWat] = useState(-1);
     const [refreshPage, setRefreshPage] = useState(0);
 
-
-    let date = '2023-01-31';
+    const location = useLocation();
+    const { from } = location.state;
+    let date = from;
+    
     const userInfo = getUser();
 
     const fetchDay = useCallback(async () => {
@@ -295,17 +297,17 @@ function UpdateDay() {
             }
         }
         dayData.meals[mi++] = meal4;
-        
+
         dayData.date = userId + "@" + date;
 
         console.log(dayData);
 
         const updateResponse = await HttpPost("update_day?userId=" + userId + "&userName=" + user.username + "&password=" + user.password, dayData);
         console.log(updateResponse);
-        
+
         const addResponse = await HttpPost("add_day?userId=" + userId + "&userName=" + user.username + "&password=" + user.password, dayData);
         console.log(addResponse);
-        
+
     }
 
     return (<>

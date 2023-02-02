@@ -98,7 +98,8 @@
 }
 
 hr {
-    border-top: 1px solid #ddd;
+    border-top: 0px solid rgba(0, 0, 0, 0.25);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
     margin: 5px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -199,8 +200,39 @@ hr {
     font-size: larger;
 }
 
-/* 
+.profile{
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    box-shadow: 5px 5px 20px #ccc;
+    margin: 20px;
+    padding: 10px;
+    width: 200px;
+}
+
+.CHName{
+    font-size: 45px;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+    padding-right: 10px;
+    margin-bottom: 20px;
+}
+
+.CHWeight{
+    font-size: x-large;
+    padding-right: 10px;
+    margin-bottom: 20px;
+}
+
+.bubbleRow{
+    display: inline-flex;
+    cursor: pointer;
+}
 
 body {
-    background-color: #111827;
-} */
+    padding: 0px;
+    margin: 0px;
+}
+
+.datePick{
+    width: 16px;
+}

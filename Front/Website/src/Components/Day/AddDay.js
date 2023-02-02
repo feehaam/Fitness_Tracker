@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import HttpPost from '../../API/HttpPost';
 import { LoginCheck } from '../User Account/Login';
 import { getUser } from '../Helper/UserInfo'
@@ -18,7 +18,11 @@ export function AddDay() {
         }
     })
 
-    const todayDate = new Date().toJSON().slice(0, 10);
+    const location = useLocation();
+    const { from } = location.state;
+
+    let todayDate = new Date().toJSON().slice(0, 10);
+    if(from != null) todayDate = from;
 
     const [exId, setExId] = useState([]);
     const [meal1Id, setMeal1Id] = useState([]);
@@ -44,7 +48,7 @@ export function AddDay() {
 
     let idx = 0;
     let m1idx = 0, m2idx = 0, m3idx = 0, m4idx = 0;
-    
+
     const exerciseComps = exId.map((number) =>
         <Exercise index={idx++} activities={activities} />
     );
@@ -273,7 +277,7 @@ export function AddDay() {
         }
         dayData.meals[mi++] = meal4;
 
-        date = userId + "@" + date;
+        date = userId + "@" + todayDate;
         dayData.date = date;
 
         console.log(dayData);
@@ -284,8 +288,9 @@ export function AddDay() {
 
     return (<>
         <form className={styles.containerCen}>
-            <div className={styles.title}>Date</div><br></br>
-            <input type={"date"} id="date" className={styles.i} defaultValue={todayDate} /><br></br>
+            <div><h3>Add food & exercises</h3></div>
+            <div id='date'><h3>{todayDate}</h3></div>
+            
             <hr></hr>
             <div className={styles.title}>Breakfast</div><br></br>
             {mealComps1}
@@ -308,7 +313,7 @@ export function AddDay() {
             <input className={styles.afbtn} type={'button'} onClick={() => addOrRemoveMeal(true, "m4")} value={"(+) Add meal"} />
             <input className={styles.afbtn2} type={'button'} onClick={() => addOrRemoveMeal(false, "m4")} value={"(-) Remove meal"} /><hr></hr>
             <div className={styles.title}>Water (liter)</div><br></br>
-            <input type={"number"} className={styles.i} id="water"/><br></br>
+            <input type={"number"} className={styles.i} id="water" /><br></br>
             <hr></hr>
             <div className={styles.title}>Exercise & workouts</div><br></br>
             {exerciseComps}
@@ -317,7 +322,7 @@ export function AddDay() {
             <input className={styles.afbtn2} type={'button'} onClick={() => addOrRemoveEx(false)} value={"(-) Remove exercise"} /><br></br><br></br>
             <hr></hr>
             <div className={styles.enter}>
-            <input className={styles.ibtn} type={'button'} onClick={() => addDay()} value={"Add day"} />
+                <input className={styles.ibtn} type={'button'} onClick={() => addDay()} value={"Add day"} />
             </div>
         </form>
     </>)
