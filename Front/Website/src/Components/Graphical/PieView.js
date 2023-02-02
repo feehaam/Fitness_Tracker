@@ -2,9 +2,9 @@ import { Cell, Pie, PieChart } from "recharts"
 import PieItem from "./PieItem"
 import styles from './PieView.module.css'
 
-export default function PieView({ data, colors, size }) {
+export default function PieView({ title, data, colors, size }) {
+    if (data === null || data.length === 0) return (<><div className={styles.container}><h3>Not enough data to make a Pie chart on <br></br> {title}</h3></div></>)
     return (<>
-        <h1>Pie chart</h1>
         <div className={styles.container}>
             <div className={styles.views}>
                 <div className={styles.piebg}>
@@ -35,7 +35,7 @@ export default function PieView({ data, colors, size }) {
                 <br></br>
             </div>
             <div className={styles.title}>
-                Calories burned from things
+                {title}
             </div>
         </div>
     </>)

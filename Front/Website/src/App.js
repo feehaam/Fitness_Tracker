@@ -44,7 +44,7 @@ Daily
 Weekly
 	- Protein vs fat vs carb bar chart
 	- All nutrition bar chart
-	- All burned calorie pie
+	- Calories on each pie
 	- Daily weight loss pie
 	- Daily weight loss bar
 	- Each exercise analysis
@@ -54,9 +54,6 @@ Weekly
 Weekly
 	- Protein vs fat vs carb bar chart
 	- All nutrition bar chart
-	- All burned calorie pie
-	- Daily weight loss pie
-	- Daily weight loss bar
 	- Each exercise analysis
 		- Daily pie
 		- Sub attributes bar

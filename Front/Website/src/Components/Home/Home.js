@@ -1,11 +1,11 @@
-import Login, { LoginCheck } from "../User Account/Login";
+import { LoginCheck } from "../User Account/Login";
 import { useNavigate } from 'react-router-dom';
-import View from '../Graphical/View'
 import CaloriesHeading from "./CaloriesHeading";
 import { getUserJSON } from "../User Account/User";
 import { useCallback, useEffect, useState } from "react";
 import { getFoods } from "../Helper/GetFoods";
 import { getActivities } from "../Helper/GetActivities";
+import { Weekly } from "./Weekly/Weekly";
 
 function Home() {
 
@@ -35,39 +35,12 @@ function Home() {
     useEffect(() => {
         setupUser();
     }, [setupUser]);
-
-    //Just a random test for view
-    const data = [
-        {
-            "name": "Group A",
-            "value": 400
-        },
-        {
-            "name": "Group B",
-            "value": 300
-        },
-        {
-            "name": "Group C",
-            "value": 500
-        },
-        {
-            "name": "Group D",
-            "value": 200
-        },
-        {
-            "name": "Group E",
-            "value": 278
-        },
-        {
-            "name": "Group F",
-            "value": 189
-        }
-    ]
-    // <View data={data} type='pie' color='any' size={10} />
-
+    
     return (<>
         <CaloriesHeading user={user} foods={foods} activities={activities} />
-
+        <br></br>
+        {/* {getMonthDates(0, user)} */}
+        <Weekly user={user} foods={foods} activities={activities} />
     </>);
 }
 export default Home; 
